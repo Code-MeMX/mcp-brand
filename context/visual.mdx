@@ -1,0 +1,2198 @@
+---
+id: "ai-context"
+title: "Contexto para IA (visual)"
+unlisted: true
+---
+
+
+
+# CMYK
+
+# PALETA FÍSICA (CMYK MODE)
+
+
+
+
+  **El Mundo Físico No Emite Luz.** Cuidado profundo: Un novato se equivoca gravemente asumiendo una igual conversión; en tu brillante monitor quemas luz <code>RGB</code>, 
+  mientras que en lonas, papelería y vinil automotriz el plotter escupe forzosamente densas tintas sustractivas <code>CMYK</code> que absorben agresivamente la luz ambiental.
+
+
+---
+
+:::warning 🚨 COMPATIBILITY BUG: OUT_OF_GAMUT ERROR
+Las luminosas y letales variantes corporativas **(Rosa Ajolote y Cyan Eléctrico)** son radiantes frecuencias puramente electromagnéticas sintéticas de computadora. Jamás de los jamases un plotter regular 
+y anticuado podrá igualar su impacto fosforescente mezclando solo los clásicos rodillos aburridos CMYK comerciales de escuela. Tu PDF _RGB_ masivo se achatará inevitablemente de inmediato, vomitando sucios plastones visuales sin brillo ni energía. 
+:::
+
+
+
+Para salvar la vida a tus asombrosos diseños impresos (`Offline Deploy`), hemos reingenierizado el código genético nativo en **La Paleta CMYK (El "Hard Patch")**. Estas combinaciones CMYK rigurosas en los porcentajes jamás tienen el descabellado objetivo de igualar tu brillante Macbook, pero nos garantizan exprimir y _Hackear_ matemáticamente la formulación porcentual de cuatricromía cruda al límite de la química de los plotters 
+hasta escupir la gota de tinta más pesada y rabiosa posible reteniendo vigor.
+
+---
+
+### 🖨️ Variables Físicas (Ink Constants)
+
+Acá debajo yaces el Array exacto configurado meticulosamente por nuestros diseñadores _Backend_. 
+Utiliza su calca estricta de variables pantone fluorescentes si exiges inyectar brillo ciego puro imprimiendo Offset o Serigrafía con un presupuesto ilimitado enorme.
+
+<ColorPalette columns={2}>
+    <ColorCard name="Obsidiana Rich Black" color="#000000" type="cmyk" cmyk="C:80 M:70 Y:50 K:100" pantone="Black 6 C" variant="default" />
+    <ColorCard name="Rosa Ajolote" color="#E6007E" type="cmyk" cmyk="C:0 M:100 Y:10 K:0" pantone="Neon Pink 021 C" variant="default" />
+    <ColorCard name="Cyan de Proceso" color="#00AEEF" type="cmyk" cmyk="C:100 M:0 Y:0 K:0" pantone="Neon Green 021 C" variant="default" />
+    <ColorCard name="Verde Lima" color="#80C342" type="cmyk" cmyk="C:50 M:0 Y:100 K:0" pantone="Neon Cyan 021 C" variant="default" />
+</ColorPalette>
+
+---
+
+### 1. Obsidiana Digital (Rich Black)
+
+
+  <ColorCard name="Obsidiana Rich" color="#000000" type="cmyk" cmyk="C:80 M:70 Y:50 K:100" variant="hover" />
+
+
+
+  En CMYK no es azul oscuro, es la negrura espacial hiper pesada. Este colosal <i>Rich Black</i> es la brutal receta química maestra `80/70/50/100` que le exige a las máquinas empapar abismalmente de charcos de tinta los poros del papel mate o lona hasta crear un agujero sin fondo de contrastes supremos para realzar la fuente gráfica blanca, jamás usando asqueroso y simple gris `K:100` seco.
+
+
+### 2. Rosa Magenta de Proceso (El Clon Físico)
+
+
+  <ColorCard name="Rosa Magenta" color="#E6007E" type="cmyk" cmyk="C:0 M:100 Y:10 K:0" variant="hover" />
+
+
+
+  Fuerte como el Rosa Ajolote, pero notablemente oscurecido `(`M:100, Y:10`)`. Es el tinte rosa carmín rojizo más estúpidamente furioso posible que arroja la mezcla química regular barata. Lo aplicas en gruesos encabezados y logos pesados impresos. Si requieres el `Glitch` resplandeciente del RGB web, estás obligado a ordenar al impresor el tóxico <b>Pantone Neon Pink 021 C</b> (Tinta Directa fluorescente especial carísima).
+
+
+### 3. Cyan de Proceso Escolar (Electric Blue_CMYK)
+
+
+  <ColorCard name="Cyan Crudo" color="#00AEEF" type="cmyk" cmyk="C:100 M:0 Y:0 K:0" variant="hover" />
+
+
+
+  No hay mentira ni mezclas `(Cyan:100)`. Puro tanque primario cian empapando limpiamente el rodillo de alta tecnología. Confiable, liso e industrial, jamás amarillea ni decepciona. Se restringe visual y tácticamente su empleo analógico a minuciosos diagramas de redes impresas infográficas y sutiles delgadísimas flechas conmemorativas de conexión a los servidores.
+
+
+### 4. Verde Lima Analógico (Terminal_CMYK)
+
+
+  <ColorCard name="Verde Impreso" color="#80C342" type="cmyk" cmyk="C:50 M:0 Y:100 K:0" variant="hover" />
+
+
+
+  El Matrix resplandeciente no transiciona bien al papel. Baja su violencia a un amigable pero sólido _Verde Vegetal Orgánico_ más corporativo `(Y:100, C:50)` hiper legible para padres de familia si le inyectas contraste. Aún sirve su principal propósito inagotable físico: Checkmarks rotundos, casillas masivas de "Success" del diploma, o señaladores pesados gráficos redondos de OK.
+
+# CONTRASTE
+
+# REGLAS DE CONTRASTE Y LEGIBILIDAD
+
+
+
+
+  **El Sistema de Colisión Visual**. Si mezclas mal nuestras variables cromáticas, no solo se ve horrendo; destruyes la experiencia de usuario (UX) 
+  creando fatiga óptica en milisegundos. El cumplimiento militar de esta matriz asegura una lectura inmersiva 
+  y estética sin *Bugs* visuales.
+
+
+---
+
+### 🧮 Matriz de Combinaciones Permitidas (Whitelist)
+
+Esta tabla estricta define matemáticamente qué colores actúan como **Base** (Fondo contenedor `bg`) y cuáles como **Overlays** (`Elementos de primer plano/texturas`).
+
+| Capa_Cero (Fondo) | Capa_Uno (Texto / Icono) | Resultado de Compilación Recomendado |
+| :--- | :--- | :--- |
+| **Obsidiana Digital** (`#0F172A`) | Blanco, Cyan Eléctrico, Rosa | **Combinación Supreme.** El _Setup_ definitivo Dark Mode. |
+| **Rosa Ajolote** (`#FF2A6D`) | Obsidiana Digital, Blanco | Botones de Urgencia Crítica (`CTA`) de brutal impacto. |
+| **Cyan Eléctrico** (`#00F0FF`) | Obsidiana Digital | Etiquetas pequeñas, estados `hover` o sub-menús nav. |
+| **Verde Terminal** (`#05FF00`) | Obsidiana Digital | Indicadores limpios de éxito macizo o Highlight blocks. |
+| **Blanco Consola** (`#F8FAFC`) | Obsidiana Digital, Rosa | **Exclusivamente para imprenta** (Modo _Ink Saver_). |
+
+### 🎛️ Showcase Interactivo de Matrices
+La consola te permite explorar _On the fly_ cómo compilan dinámicamente nuestros colores base entre sí (En RGB puro y CMYK plano). Usa el selector interactivo.
+
+<ContrastShowcase />
+
+---
+
+### ⚖️ Jerarquía de Contraste (Estándar WCAG)
+
+Para no sangrar la retina ocular de nuestros usuarios al leer bloques documentales:
+
+1. **Lectura Óptima Total:** **Blanco Consola** directo sobre la masiva **Obsidiana Digital**. Es la relación estricta rey superior a `15:1` de contraste.
+2. **Sistema de Destacados (Highlighting):** Variables ácidas como **Rosa Ajolote** y **Cyan Eléctrico** bailan sobre lienzos oscuros SÓLO para enfatizar microdatos: *Labels, Strings, H2 o Iconos mágicos*. Jamás para un párrafo largo humano.
+3. **Estado de Botones (CTAs):** Regla de la Sangre Negra: Si fundes un botón vivo (`Verde, Rosa, Cyan`), la letra interna debe ser cruelmente **Obsidiana**. Nunca la pintes de blanco o explotará visualmente.
+
+<HierarchyShowcase />
+
+---
+
+### 🛑 Error Fetal: Combinaciones Prohibidas (`Syntax Errors`)
+
+Para sortear las horribles "Vibraciones Cromáticas" y el look pasivo novato, queda penalizado por sistema la inyección del siguiente código visual:
+
+1. **Rosa vibrante sobre Verde radiante:** Destrucción óptica total. Sus frecuencias casi chocan matando el enfoque humano (Efecto de Moiré Psicológico).
+2. **Cyan sobre Blanco:** Contraste matemáticamente muerto (`< 3:1`). El texto sufre lavado y simplemente desaparece en un mar de luz blanca inútil.
+3. **Texto Blanco sobre Background Verde Terminal:** Un crimen de accesibilidad. El verde brillante se come los pixeles blancos. **Tira Letras oscuras encima del Verde.**
+
+<ForbiddenShowcase />
+
+---
+
+## 💻 Aplicación de Inyección en Código Base (`UI`)
+
+### Las Variables de Ambiente CSS (CSS Vars)
+Toda la arquitectura del sistema front-end de `CODE ME` debe estar referenciada obligatoriamente a CSS Tokens. 
+Al inyectar paletas semánticamente logras velocidad inaligerable.
+
+```css
+/* ROOT: Declarando Variables de Entorno del Sistema */
+:root {
+  /* Lienzo */
+  --cm-obsidiana: #0F172A; 
+  --cm-blanco-consola: #F8FAFC; 
+  
+  /* El Fuel (Acentos) */
+  --cm-rosa-ajolote: #FF2A6D; 
+  --cm-cyan-electrico: #00F0FF; 
+  --cm-verde-terminal: #05FF00; 
+  
+  /* Estados UI Ocultos */
+  --cm-border: rgba(248, 250, 252, 0.15); /* Bordes UI transparentes */
+  --cm-selection: rgba(0, 240, 255, 0.3); /* Swipe mágico */
+}
+
+/* COMPONENT: Botón Primario de Fuego */
+.btn-core {
+  background-color: var(--cm-rosa-ajolote);
+  /* Regla de Contraste #3 aplicándose: Texto oscuro encima */
+  color: var(--cm-obsidiana); 
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace; /* Tipo Comando */
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* COMPONENT: Hightlight de Código Activo */
+.code-highlight_success {
+  color: var(--cm-verde-terminal);
+  border-left: 2px solid var(--cm-verde-terminal);
+  padding-left: 1rem;
+}
+
+/* COMPONENT: Hackeando el ratón del usuario */
+::selection {
+  background: var(--cm-selection);
+  color: var(--cm-blanco-consola);
+}
+```
+
+---
+
+## 🛠️ Herramienta Embebida: Contrast Checker
+
+Nuestra máquina está conectada. Valídalo en vivo:
+
+<ContrastChecker />
+
+# ERGONOMIA
+
+# ERGONOMÍA VISUAL Y SALUD UX
+
+
+
+
+  **Development-First Approach.** La identidad entera de <strong>CODE ME</strong> no fue diseñada caprichosamente porque se viera "bonita". 
+  Reconocemos que nuestros usuarios críticos (programadores, estudiantes de código, y analistas) 
+  pasan brutales periodos prolongados quemándose las retinas frente a monitores emisivos.
+
+
+---
+
+### 👁️ Reducción de Fatiga Visual (Astenopía Tech)
+El uso dictatorial de nuestra gruesa capa de **Obsidiana Digital (`#0F172A`)** como fondo permanente, aplasta radical y eficazmente la dañina emisión descontrolada de luz azul (Blue-light emission) y frena el brillo excesivo de la pantalla en los escritorios.
+
+- **El Fix Fisiológico:** Esto genera directamente un enorme descanso biológico y menor esfuerzo constante del músculo ciliar ocular de los alumnos. Previniendo dramáticamente el ardor ocular, la vista borrosa progresiva y las clásicas migrañas y dolores de cabeza frontales tras épicas de jornadas de 8 horas tirando código.
+
+### ⭕ Prevención del Efecto "Halo" (Astigmatismo)
+Para millones de usuarios con astigmatismo leve o de alto grado, un texto blanco absoluto 100% puro radiando fotones ciegamente frente a un negro vacío absorbente, no se lee nítido, sino que les genera físicamente un doloroso efecto visual de "Difuminado" o halo parpadeante.
+
+- **El Parche UX:** Por esto mismo creamos matemáticamente el **Blanco Consola (`#F8FAFC`)**. Al rebajar fríamente un par de puntos la pureza RGB, logramos entintarlo ligeramente, suavizando inmensamente el contraste cortante extremo. Permitiendo una lectura de párrafos mil veces más relajada y nítidamente filosa sobre el canvas puro.
+
+### 🚥 Control de la Vibración Cromática Óptica
+Ciertas combinaciones de los colores luz de alta frecuencia (Como nuestro ardiente Rosa Ajolote directamente puesto y haciendo frontera sobre el Verde Terminal) provocan una furiosa sobre-estimulación química de los fotorreceptores inmediatos de la retina humana.
+
+- **Warning System:** Esto causa a corto plazo una irreal sensación fisiológica de "movimiento ciego" o desagradable resplandor vibratorio (Moiré de bordes). Por eso mismo, queda prohibidísimo por manual empatar áreas inmensas de choque de colores primarios neón vivos sin aplicar _padding_ o filetes ciegos negros de Obsidiana para apaciguar el choque.
+
+### ☀️ El "Modo Blueprint" (Protocolo de Día)
+Aunque somos una pesada marca de culto al `Dark Mode` (código de noche), en entornos físicos con altísima radiación lumínica natural directa en campo (Impresión Offset o Exteriores OOH), obligar al ojo humano ciego a escudriñar formas negras absorbiendo luz causa un doloroso esfuerzo ocular inverso.
+
+- **Switch Autorizado:** Se permite tácticamente el _override_ al uso pleno táctico de la variante fotográfica clara (Nuestro **Modo Blueprint Papel de Ingeniería Blanco**) para publicidades que se exponen en calle en pleno sol radiante cenital, protegiendo totalmente al usuario del efecto de deslumbramiento urbano ciego.
+
+---
+
+### 🧮 Diferentes Capacidades Visuales (Color Blindness)
+Es de suprema importancia en una empresa de desarrollo web inclusiva puramente digital auditar y entender rigurosamente cómo es percibida por los padres de familia nuestra paleta si sufren de alteraciones crónicas genéticas en la visión del color cromático regular.
+
+Nuestra meta maestra técnica es que nuestra jerarquía publicitaria no se desplome, sino que su robustez se base infaliblemente en la profunda diferencia de **Luminosidad Perceptual Cruda** (Blancos VS Negros) y no solamente en la dependencia ingenua de puros Tintes Bonitos en el color.
+
+<ColorVisionShowcase />
+
+# INDEX
+
+# SISTEMA CLROAMATICO
+
+
+
+
+  **El Voltaje Visual.** Los colores de <strong>CODE ME</strong> no son simples selecciones de "Qué se ve bonito en la rueda del pantone"; 
+  son verdaderos voltajes digitales crudos diseñados científicamente para sangrar brillo sobre el <i>Dark Mode</i> 
+  y permanecer legibles en cualquier entorno de desarrollo bajo presión.
+
+
+---
+
+
+  {/* RGB */}
+  
+    
+      
+    
+    
+      Nuestra brutal paleta de colores luz primaria (`Rosa Ajolote`, `Verde Terminal`, `Cyan Eléctrico`, `Obsidiana`).
+      
+    
+  
+
+  {/* CMYK */}
+  
+    
+      
+    
+    
+      Llamadas a `Parches` químicos para impresión física, asegurando que el Neón sobreviva al pasarlo a Offset y Plotters de Lona.
+      
+    
+  
+
+  {/* Contraste */}
+  
+    
+      
+    
+    
+      Exhaustiva jerarquía de legibilidad bajo el estándar internacional `WCAG`, matrices de combinación autorizadas y Accesibilidad Tech.
+      
+    
+  
+
+  {/* Salud */}
+  
+    
+      
+    
+    
+      Salud del usuario puro. Directrices fisiológicas aplicadas para prevención brutal de fatiga ocular en lectura de código prolongada.
+
+# NOTAS
+
+# NOTAS IMPORTANTES (TIPS)
+
+
+
+---
+
+### ¿Por qué diablos mis colores tienen dos códigos HEX distintos?
+
+Es tu culpa en absoluto. Es una fantástica pregunta que se hacen todos los alumnos de primeros ciclos. La respuesta lógica técnica está en la infinita brecha universal que existe entre emitir **Luz (`RGB`)** y plasmar **Tintas Químicas (`CMYK`)**.
+
+#### 1. El Runtime Mode Físico (Tintas CMYK)
+- **Concepto:** Todos los clásicos colores que pides que se impriman en un enorme vinil automotriz o en el libro oficial de la escuela (como nuestra versión `#E6007E`) son inherentemente **reflectores muertos de luz**.
+- **La Física:** Son tintas orgánicas sucias y apagadas forzosamente por pura química natural, porque la tinta cruda _absorbe luz muerta_ en lugar de re-emitirla al ojo humano.
+- **Funcionamiento Matemático:** Trabajan burdamente restándole puros niveles de luminosidad al pobre papel encapado blanco maestro. (Cian + Magenta + Amarillo + el temido Key Plate Negro).
+
+#### 2. El Runtime Mode Pantalla (Pantallas RGB)
+- **Concepto:** Por el contrario total; los impresionantes y ciegos colores fosforescentes que amas ver en tu monitor retina display nuevo (como nuestro `#FF2A6D`) son descarados **emisores violentos de luz fotónica**.
+- **La Física:** Son vibrantes al máximo, quemantes, brillantes y literalmente "Electric". Exudan radiación. No hay tinta, son diodos de led quemados.
+- **Funcionamiento Matemático:** Funcionan lógicamente _sumando frecuencias puras_ de fotones calientes (Vectores Rojo + Verde + Azul hasta llegar al blanco máximo de la ceguera).
+
+
+### 💡 TL;DR (Resumen de Producción)
+Nosotros siempre llamaremos en nuestro front-end al majestuoso **código primario de Luz (`RGB`)** para levantar la fantástica Matrix Web de `Code Me` y las pantallas táctiles. 
+
+Nos ahorcaremos y tendremos que usar dócilmente el terrible **código secundario opaco (`CMYK`)** forzoso para intentar imprimir lonas espectaculares enormes en avenida, o simples playeras promocionales de algodón barato publicitario. 
+
+Si cometieras la locura de intentar mandar imprimir por necedad tu `#FF2A6D RGB puro` directamente y sin modificar variables en una impresora de inyección EPSON; la estúpida máquina al verse imposibilitada de lanzar diodos de luz, simplemente la ahogará en su limitado perfil de tinta, destruyendo nuestro Neón y entregándote deprimentemente el peor color rosado pastel ocre sucio y sin alma jamás antes visto en la historia universal. Por eso mismo exacto programamos el _"Parche Modesto de Valores CMYK"_, simulando manualmente la química estricta de compensación para emparejar colores oscuros.
+
+:::warning 🚨 FATAL ERROR: REGLA DE DOS AMBIENTES
+Si el gráfico vivirá nativamente atrapado en tu celular o pantalla OLED; usas **Luz (Paleta RGB 1)**. <br/>
+Si obligatoriamente existirá su soporte en el mundo de papel celulosa física; usas **Tinta (Paleta CMYK 2)**. <br/>
+Jamás crees archivos cruzándolas mutuamente, la consola lo registrará como error.
+:::
+
+# RGB
+
+# PALETA PRINCIPAL (RGB MODE)
+
+
+
+
+  **Modo de Pantalla Nativo.** Nuestro sistema cromático base está construido con píxeles RGB iluminados, nunca con tintas opacas. 
+  Aquí se definen las variables absolutas de color que dominan la UI brillante de <strong>CODE ME</strong>.
+
+
+---
+
+:::warning ⚠️ EXCEPCIÓN AL MODO OSCURO (ECO-FRIENDLY)
+Nuestros colores estrella neón (`Rosa Ajolote`, `Cyan Eléctrico`, `Verde Terminal`) son colores **luz puros (RGB)** súper luminosos. Están garantizados a morir y asfixiarse visualmente si los imprimes directo en impresoras austeras tradicionales.
+- **Ecofriendly Hack (`Ink_Saver_Mode = true`):** Para imprimir manuales escolares, exámenes físicos, fichas y documentos académicos largos, **INVIERTE LA POLARIDAD VISUAL** sin dudarlo. 
+- Fija el Fondo de la hoja llanamente en **Blanco** (`#FFFFFF`), lanza el Body Text a **Negro Puro** (`#000000`) y usa nuestras potentes variables de color Neón exclusivamente en pequeños acentos matemáticos (títulos, vectores o alertas) emulando exactamente la fría y calculada estética de un *Plano Arquitectónico (Blueprint)* físico impreso.
+:::
+
+## 🧪 Base del Sistema de Color (`Theme Consts`)
+Nuestra Matrix se dibuja sobre estos cinco valores Hexadecimales:
+
+<ColorPalette columns={3}>
+  <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={1} variant="default" />
+  <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="default" />
+  <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="default" />
+  <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="default" />
+  <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.9} variant="default" />
+</ColorPalette>
+
+
+### 1. Obsidiana Digital (Background)
+
+
+  <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={1} variant="hover" />
+
+
+
+  Proscrito está el uso de fondos planos negros puros (`#000000`) ruidosos de Paint 90s. Nuestro Dark Mode general 
+  exige un azul profundísimo y sumamente elegante inspirado simultáneamente en la enigmática piedra volcánica mexicana y el frío fondo vacío de un editor de <code>VS Code</code> recién abierto a las 3 AM. Representa la profundidad bruta del lienzo digital infinito y la serenidad profesional sobre la cual montamos el neón.
+
+
+- **Variable CSS:** `var(--cm-obsidiana)`
+- **Uso Estricto:** Canvas base de las páginas Web enteras y fondos predominantes limpios de interfaces oscuras o Presentaciones magistrales (`Base-layer`).
+
+---
+
+### 2. Rosa Ajolote (Primary Accent)
+
+
+  <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="hover" />
+
+
+
+  La gloriosa fusión perfecta, ruidosa y en esteroides químicos del clásico "Rosa Mexicano" nativo artesanal repotenciado agresivamente 
+  con intenso fósforo y neón del género Cyberpunk. Es el verdadero corazón latiendo a mil por hora de la marca. 
+  Inyecta al usuario pura estamina estética, rebeldía hacker y regeneración celular como la piel base de Bitxo. Escandaliza la vista si se abusa, así que dosifícalo.
+
+
+- **Variable CSS:** `var(--cm-rosa-ajolote)`
+- **Uso Estricto:** Fuego intenso. Uso limitado a formidables Botones de compra o registro hiper urgentes (`CTAs` estelares), alertas graves de sistema o bloques estéticos que necesitemos tatuar en la mente del padre de familia.
+
+---
+
+### 3. Verde Terminal (Success Matrix)
+
+
+  <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="hover" />
+
+
+
+  Sangre directa de "La Matrix". El nostálgico verde radioactivo fluorescente clásico inconfundible 
+  de los bulbos en los monitores de texto viejos crudos de ingeniería pura en los sótanos. 
+  Es un disparo al instinto nerd básico y por su significado general representa un script limpio corriendo asombrosamente.
+
+
+- **Variable CSS:** `var(--cm-verde-terminal)`
+- **Uso Estricto:** Mensajes de confirmación limpios (`200 OK`), pop-ups triunfantes, barras de progreso llenas (`Loaders`), iconos brillantes de Checks de seguridad perfectos o hacks logrados. Crecimiento.
+
+---
+
+### 4. Cyan Eléctrico (Tech UI / Connect)
+
+
+  <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="hover" />
+
+
+
+  Frío. Eléctrico. Imperturbable. Es color natural de un rayo luminoso vectorizado recorriendo la densa red a velocidad de _fibra óptica_. 
+  Representa crudamente la fría conectividad internacional global en un click, la extrema lejanía sin emociones y el rostro lógico imparable de la computadora dominando la interface.
+
+
+- **Variable CSS:** `var(--cm-cyan-electrico)`
+- **Uso Estricto:** Pura arquitectura UI técnica. Enlaces web crudos en texto (Hipervínculos flotando `#url`), delgados bordes emisivos de cajas de texto futuristas HUDs, flechas indicativas de lógicas complejas y los emblemáticos _Goggles luminosos AR_ tácticos de nuestro Tech Mentor, Bitxo.
+
+---
+
+### 5. Blanco Consola (Typography Base)
+
+
+  <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.9} variant="hover" />
+
+
+
+  Romper la vista inyectando un masivo texto `#FFFFFF` puro destellando cegadoramente la Retina frente al negro Dark Mode brutal de media noche 
+  es un error de dolor de cabeza de _Frontend Juniors_. Para la lectura pacífica aplicamos un "Blanco roto inteligente". 
+  Cargado apenas imperceptiblemente hacia sutiles tonos gris-azulados, garantizando un confort visual quirúrgico absoluto mientras el alumno deborar enormes bloques densos documentales de código leyendo horas seguidas sin fatigarse.
+
+
+- **Variable CSS:** `var(--cm-blanco-consola)`
+- **Uso Estricto:** Todo texto legible regular. Enormes hilos de párrafos educativos largos, títulos base que no busquen llamar la atención y _strings_ de lectura general limpia (`color: var(...)`).
+
+# CONCEPTOS
+
+# CONCEPTOS FUNDAMENTALES (CORE)
+
+
+
+
+  **The Core Rules**. El marco conceptual inquebrantable que dicta cómo se ve y se siente la marca a nivel gráfico. Todas las artes de **CODE ME** deben cumplir este _test suite_.
+
+
+---
+
+### 🕸️ Caos Ordenado (`Grid_System: "Flexible"`)
+Inspirado visceralmente en la dualidad del ecosistema nacional: la estructura de los mercados mexicanos o el denso cableado aéreo de fibra óptica de las ciudades cyberpunk. Visualmente parece un sistema denso, saturado y complejo de primeras, pero **absolutamente cada elemento tiene una función, un peso atómico y una conexión** geométrica validada en la retícula. 
+
+### 👥 Humanismo Aumentado (`User_Focus()`)
+Rompiendo con la estética fría de la IA comercial, en **Code-Me** jamás mostramos _"Tecnología vacía"_. Mostramos sin falta a humanos cálidos (niños, estudiantes sonriendo, desarrolladores concentrados) usando la tecnología ruda como una potente extensión de la cultura. La máquina sirviendo al humano, no a la inversa. El hardware es solo el fondo; el humano brillando de rosa y cian es el Focus Point.
+
+### 💥 El Glitch como Metáfora de Evolución (`Bug -> Feature`)
+Prohibido limpiar los errores al 100%. El uso sutil y recurrente de efectos de "interferencias visuales" cromáticas (Aberración, Scanlines CRT, Ruido de Compilación) no es solo moda hacker. Es un manifiesto visual que **representa nuestro agridulce proceso de aprendizaje**: El error es feo, pero es solo el paso inmediatamente anterior (`v1.0`) antes de la épica optimización final del código (`v2.0`).
+
+# IMPRESOS
+
+# IMPRESOS: MANUAL DE RESISTENCIA
+
+
+
+
+  **El Mundo Físico.** A diferencia abismal de las interfaces web reactivas, el papel impreso es estrictamente 
+  para la posteridad técnica, la permanencia y la pura estructura.
+
+
+---
+
+### 📏 Estética de Ingeniería (Blueprint Core)
+Adiós fotografías planas publicitarias sin chiste. Al pensar en impresos, el layout se rige bajo esquemas de diagramas técnicos que traten de desglosar visualmente objetos, edificios, código (incluso la propia mascota **Bitxo**) como si fueran planos reales de arquitectura o esquemática de hardware de una nave espacial corporativa. Exige el **uso intensivo de retículas (grids)** permanentemente visibles de fondo.
+
+### 📐 Textura Táctil (Analog Layer)
+No es "diseño plano" aburrido. En papelería, posters o recintos escolares físicos de `Code Me`, necesitamos que gráficamente se replique la sensación física y pesada de una bitácora técnica de campo. Se busca encarecidamente un acabado visual en fondos que recuerde intensamente a texturas ruidosas como "Papel reciclado", "Papel Ingeniería antiguo" o "Papel Cebolla manchado". Los marcos y esquinas deben contener coordenadas matemáticas `(X:12, Y:43)` diminutas, marcas de corte de offset puras, y sellos circulares vectorizados de `[ Aprobado por el Sistema Central // ]`.
+
+### 🖍️ Acentos de Color (Laser Highlighting)
+En el plano impreso, bajamos la agresividad visual del Dark Mode puro masivo y damos paso al fondo Papel/Blueprint. En este formato, el hiper saturado `Cyan Eléctrico` no se usa desmedidamente sin propósito ecológico; se limita tácticamente a **resaltar a mano alzada datos de contacto híper críticos** (una llamada a la acción, nuestro logo principal, un código QR, una alerta), exactamente como si alguien en un laboratorio industrial hubiera hecho apresuradamente anotaciones encima usando un duro marcador láser sobre el plano maestro intocable.
+
+# INDEX
+
+# ESTILO DE DISEÑO
+
+
+
+
+  ¿Cómo se siente la marca en acción? El diseño en <strong>CODE ME</strong> debe sentirse 
+  como un sistema operativo personalizado y reactivo. Cada plataforma tiene su propio kernel estético.
+
+
+
+  {/* Conceptos */}
+  
+    
+      <span className="icon">🧠</span>
+      
+    
+    
+      Caos ordenado, humanismo aumentado y el "Glitch" como metáfora de evolución y aprendizaje.
+      
+    
+  
+
+  {/* Web */}
+  
+    
+      <span className="icon">🌐</span>
+      
+    
+    
+      La "Terminal Viva": micro-interacciones, scrollytelling con código y estética Dark Mode pura.
+      
+    
+  
+
+  {/* Redes */}
+  
+    
+      <span className="icon">📱</span>
+      
+    
+    
+      El "Street-Tech" visual: Cultura hacker mezclada con el color local, memes y educación.
+      
+    
+  
+
+  {/* Presentaciones */}
+  
+    
+      <span className="icon">🖥️</span>
+      
+    
+    
+      El "Modo IDE": Slides que parecen entornos de desarrollo y barras de carga reales de contenido.
+      
+    
+  
+
+  {/* Impresos */}
+  
+    
+      <span className="icon">📜</span>
+      
+    
+    
+      El "Manual de Resistencia": El uso de blancos, grises, papel ingeniero y estética de laboratorio.
+      
+    
+  
+
+  {/* Merch */}
+  
+    
+      <span className="icon">🧢</span>
+      
+    
+    
+      "Code-Wear" de alta fidelidad. Ropa para desarrolladores sin complejos geek, moda urbana.
+      
+    
+  
+
+  {/* Notas */}
+  
+    
+      <span className="icon">✏️</span>
+      
+    
+    
+      Pequeños tips (como prompts optimizados para IA) para asegurar la fidelidad gráfica de la marca.
+
+# MERCH
+
+# MERCHANDISING: CODE-WEAR
+
+
+
+
+  **Hardware para humanos.** No "regalamos playeritas promocionales" que la gente 
+  termina usando para dormir. Diseñamos ropa técnica, hiper deseable, que funcione estéticamente 
+  bajo presión tanto en un Hackathon de Inteligencia artificial, como en una calle nocturna en México.
+
+
+---
+
+### 🧥 Materiales y Modularidad (`Hardware Specs`)
+Rechazamos los algodones baratos genéricos escolares e intentamos evolucionar a siluetas _Techwear_ oscuras (Sudaderas oversize `Obsidiana`, rompevientos pesados). Además, un principio de programación es la escalabilidad y personalización, por lo que **incorporamos detalles modulares**: Parches de velcro intercambiables en mangas o pechos, o bolsas utility, permitiendo al chamaco de carne y hueso _"Customizar"_ al máximo su propia prenda. Reforzando la idea profunda de poder hackear su entorno y modular su identidad social por completo.
+
+### 🕵️‍♂️ Detalles Ocultos (`Easter Eggs`)
+Los desarrolladores aman buscar un easter-egg. La ropa lleva etiquetas escondidas (en cuellos y bordes inferiores del dobladillo) diseñadas como outputs de código consola. Un alumno de pronto descubriría dentro de su chaqueta leyendo: un micro grabado que dice **`>_ EXEC: system.reboot()`**, o una fina banda con el tag **`designed_in_mexico.sh -v2`**. Pequeños tokens de comunidad secreta hiper motivacionales.
+
+### 🖼️ Gráficos en Espalda (`Back-End Prints`)
+El frente _(Front-end)_ de la ropa es un lujo minimalista absoluto: oscuro, tal vez solo el discreto `_` de nuestro logotipo neón sobre el corazón. Sin embargo, en la espalda _(Back-end)_, explota violentamente la complejidad de nuestra narrativa gráfica: Composiciones masivas altamente saturadas que mezclan iconografía _Cyber-Mexa_ profunda y compleja. Glifos prehispánicos rotos reconstruidos digitalmente, cruzando intensamente con trazos finos de geometría Sagrada de Circuitos Electrónicos gigantescos acompañados por imponentes y estéticos muros de tipografía Monoespaciada técnica que detallen las especificaciones matemáticas inventadas del objeto. Ropa como software premium de élite empaquetado y en las calles.
+
+# NOTAS
+
+# NOTAS DEL DESARROLLADOR 
+
+
+
+
+  **Documentación auxiliar**. Pequeños _snippets_ y tips de calidad de vida que todo 
+  diseñador gráfico y Lead Developer que toque un asset de <strong>CODE ME</strong> 
+  debería tener pegado en un Post-It debajo de su monitor.
+
+
+---
+
+### 🤖 Generación de Gráficos Asistida (AIO TIP)
+No tienes por qué intentar esculpir en 3D un circuito desde cero. Para que el estilo troncal técnico de Code-Me sea **perfectamente legible y procesable** por Inteligencias Artificiales generadoras de imágenes vanguardistas (Como _Midjourney V6_ o _DALL-E 3_), nuestra investigación arroja que siempre deberás asegurar el uso rígido de los siguientes metadatos descriptivos (prompts) en tu petición, como si fueran parámetros fijos de una función.
+
+```bash
+# RECOMENDED CORE METADATA CONSTANTS:
+--style: raw
+--aesthetics: "Cyberpunk Mexico", "neon pink and cyan glow accents"
+--components: "retro-tech hardware", "blueprint diagrams and labels"
+--rendering: "voxel art elements", "high contrast shadows" 
+--theme: "dark mode ui aesthetics"
+--ar: 16:9
+```
+
+# PRESENTACIONES
+
+# PRESENTACIONES: MODO IDE
+
+
+
+
+  Cualquier documento PDF, masterclass en proyector o slide enviada a los papás de **CODE ME** debe parecer visualmente 
+  **una captura de pantalla del IDE (Entorno de Desarrollo Integrado)** nativo de un programador en plena madrugada.
+
+
+---
+
+### 🪟 Layout y Marcos (UI Window)
+Olvidamos furiosamente las aburridas plantillas redondeadas estándar de PowerPoint. Los marcos perimetrales principales de nuestras _slides_ de venta siempre simularán descaradamente ventanas oscuras activadas de **VS Code** o en su defecto, ventanas gruesas y brutalistas de una terminal root de _Linux OS_, integrando sin pudor los botones de control grises clásicos del sistema (`-`, `□`, `x`) firmemente anclados en su esquina.
+
+### 🎥 Efectos y Transiciones (`opacity: 1`)
+Huir de efectos caseros tipo "Cubos 3D giratorios". En las presentaciones de venta, el tiempo es oro y _Frame Rate_. En lugar de simples desvanecimientos (`fadeIn`) a cuadros, cuando pasamos diapositivas a los padres las vistas cambian con furiosos efectos relámpago horizontales tipo **"Barrido de Glitch Fuerte de Datos"**, o tal vez caídas limpias de bloques de texto crudos estilo *Cascada Matrix*, pero sumamente cortas (máximo 0.3s) y sumamente elegantes. Las fuentes casi nunca aparecen juntas, **se teclean animadamente** revelando la idea en vivo.
+
+### 🔋 Progress Bar Activo (Loaders Reales)
+El control extremo de la ansiedad humana (UX Psicológica). Un espectador ansioso siempre quiere saber _"cuánto me falta de esta tortura"_. Todas nuestras masterclasses llevan instalada forzosamente a largo de toda la parte inferior un finísimo **Graphic Progress Bar (`#05FF00`)** que actúa visualmente como un instalador y avanza a nivel milimétrico llenándose según el porcentaje exacto restante de la presentación gráfica, matando drásticamente el estrés de no tener el control y subiéndote a la experiencia inmersiva.
+
+# REDES
+
+# REDES SOCIALES: STREET-TECH VISUAL
+
+
+
+
+  **El feed comercial.** Las redes sociales de <strong>CODE ME</strong> no lucen como folletos educativos estériles. 
+  Deben sentirse conceptualmente como el _Muro interactivo_ de una ciudad hipertecnológica del 2077.
+
+
+---
+
+### 📸 Composición (`BaseLayer`)
+Dejamos atrás los vectores infantiles, el stock genérico extranjero o la fotografía falsa corporativa. Buscamos encuadres cálidos, reales, contrastantes, enfocados en retratar escenas de adolescentes, estudiantes, desarrolladores e ilustradores, siempre con fondos sumergidos ruidosamente en _Dark Mode_ o luces tipo _Neón Cyberpunk_. A partir de esa capa base hiperrealista, agregamos pesadas intervenciones con capas digitales _Glitch_.
+
+### ✨ Elementos Gráficos (`z-index: 9999`)
+Visualmente, el contenido publicitario sufre una invasión digital constante por parte de la marca, casi como si el sistema UI tratara de analizar el mundo real que fue fotografiado.
+- **Stickers Holográficos:** Emblemas, escudos de misiones o el propio Bitxo pegados sobre la realidad o flotando levemente.
+- **HUDs & Wireframes:** Marcos delgados (`#00F0FF` o `#FF2A6D`) encuadrando rostros como detectores faciales. 
+- **Data Flow:** Flechas con estilo de consola (`-------->`) que intentan "interpretar" u "optimizar" objetos absolutamente comunes de la escena.
+- **Sintaxis Textil:** Cuadrículas finas (Grid System UI) sobre imágenes clave, bajando saturación al fondo para que brillen los assets blancos.
+
+### 🎭 Memes Tecnológicos (`var culture = 1`)
+La mejor forma de permear el algoritmo sin desgastarse. En vez de solo publicar sobre Python puros y fríos, adaptamos formatos masivos de memes (shitposting) altamente virales, pero inyectándoles el vocabulario profundo de la programación, la IA y el AIO. Se trata de usar el humor profundamente sarcástico pero infinitamente resiliente de México.
+
+# WEB
+
+# WEB: LA TERMINAL VIVA
+
+
+
+
+  **El Entorno Virtual.** La interfaz gráfica general (UI) de <strong>CODE ME</strong> no es una web informativa muerta; 
+  debe reaccionar constantemente al scroll del usuario, interactuando de vuelta como si fuera tu propio sistema operativo.
+
+
+---
+
+### 🎛️ Micro-Interacciones Reactivas (`:hover`)
+Los elementos de estado no solo mutan llanamente de color al recibir la interacción (`hover/focus/active`). Para la inmersión técnica se deben implementar ligeras opacidades cambiantes, transformaciones de tamaño sutiles (`scale(1.02)`) o flashes rápidos ("flicker") imitando una pantalla CRT vieja o los tubos de fósforo de los primeros monitores.
+Los botones de acción principal (CTAs) emiten un _glow_ exterior (`box-shadow`) estilo Cyberpunk.
+
+### 🖱️ Cursor Dinámico (Custom Pointers)
+Cuestión fundamental de inmersión: Un _custom cursor_ cambia las reglas. Para `Code-Me`, el puntero del mouse pierde formato de "flecha de Windows", y en la landing page puede transformarse libre y temporalmente en una "Mira de escaneo vectorial", un punto de enfoque de crosshairs, o un poderoso símbolo de consola interactivo (`>_`) que parpadee constantemente.
+
+### 📜 Scrollytelling & Parallax (`useEffect()`)
+Evitamos paredes llanas masivas de texto flotando en el vacío. A medida que el usuario realiza scroll down en la página base, aparecen sutiles líneas de código verdosas o blancas muy transparentes en los bordes laterales y el background, actuando visualmente para simular que la web misma se está "compilando" justo al borde la vista. El texto estático en realidad da la sensación de estarse generando _On the Fly_ desde el servidor.
+
+# DICCIONARIO
+
+# DICCIONARIO VISUAL (Tokens)
+
+
+
+
+  **El Mapeo de Conceptos.** En un entorno tecnológico no podemos darnos el lujo de ser abstractos y ambiguos.  
+  Aquí definimos rigurosamente cómo traducimos exactos conceptos educativos y de software en Íconos de Sistema dentro de **CODE ME**.
+
+
+---
+
+### 📚 Matriz de Traducción Funcional
+
+Conserva esta tabla como tu _Cheat-Sheet_. Cada metáfora corporativa tiene una manifestación forzosa idéntica tanto en el masivo reino del pixel como en el afilado mundo del vector.
+
+| Concepto (`String`) | Modo A: Items 8-bits (RPG) | Modo B: Neón Fino (`SVG Monoline`) | Metáfora Source |
+| :--- | :--- | :--- | :--- |
+| **Aprendizaje** | 🧠 Cerebro Metálico Brillando | <Icon name="Sparkle" weight="duotone" color="var(--cm-rosa-ajolote)" size={28} /> `Sparkle` | *"Upgrade Mental System"* |
+| **Seguridad** | 🛡️ Escudo de Fuerza Pesado | <Icon name="LockKey" weight="duotone" color="var(--cm-cyan-electrico)" size={28} /> `Lock Key` | *"Firewall / Defensa Activa"* |
+| **Comunidad** | 👾 Dos Aliens Abrazados | <Icon name="HandPeace" weight="duotone" color="var(--cm-verde-terminal)" size={28} /> `HandPeace` | *"Squad / Open Source Party"* |
+| **Código Base** | 📜 Pergamino Tecnológico | <Icon name="BracketsCurly" weight="duotone" color="var(--cm-cyan-electrico)" size={28} /> `Brackets Curly` | *"El Hechizo / La Sintaxis"* |
+| **Error Fatal** | 💣 Bomba Radiactiva a punto | <Icon name="Bug" weight="duotone" color="var(--cm-rosa-ajolote)" size={28} /> `Bug` | *"Bugs en Producción"* |
+| **Ingenio/Idea** | 💡 Foco Inteligente Geométrico | <Icon name="Lightbulb" weight="duotone" color="var(--cm-verde-terminal)" size={28} /> `Lightbulb` | *"Sparking Logic"* |
+
+
+  
+  
+    Nunca improvises metáforas ajenas a la marca (Ejemplo: Jamás uses una aburrida <em>Lupa Escolar anticuada</em> para simbolizar la Investigación de una niña de 10 años, usa unos rudos <em>Goggles VR Neón</em> o un <em>Sistema de Escaneo Radar</em>). Piensa siempre como un Developer del futuro, no como maestro del pasado.
+
+# IMPLEMENTACION
+
+# LEYES UX / UI PARA DISEÑADORES
+
+
+
+
+  **El Protocolo Binario.** Un icono visual inyectado sin contexto es solo ruido indeseable. Para mantener 
+  la cohesión y la majestuosa belleza algorítmica de nuestra marca mundial, estás obligado como creador de 
+  contenido a obedecer estas reglas matemáticas al implementar componentes vectoriales en tu *Viewport*.
+
+
+---
+
+### 📏 1. Tolerancia Cero al Mix Perimetral (Resoluciones)
+
+Jamás emparejes estúpidamente estilos que existen en ecosistemas diametralmente distintos. No encimes ni agrupes 
+visual y cercanamente un burdo Ícono de un Cofre en Pixeles (`8-Bit Mode`) interactuando en el mismo plano focal 
+con un minimalista botoncito vectorial finísimo (`Neón SVG`).
+
+- El `Pixel Art` exige por naturaleza vastos espacios vacíos alrededor de su propia caja para "respirar su pesada estructura cuadrada" (*Padding Matrix*).
+- Las finas líneas vectoriales Web exigen agruparse matemáticamente entre ellas cerca de limpios `Strings` de texto o código. Nunca las mezcles.
+
+---
+
+### 🎨 2. Color Coding System (Identificadores Visuales)
+
+El pintado de nuestros valiosos íconos **jamás es al azar o porque combinan bonito**. Las variables cromáticas 
+tienen su semántica purpósea inyectada; el color en los SVG debe ayudar al usuario instantáneamente a saber qué sucede.
+
+
+  
+    
+    Para iconos limpios navegables (Enviar Datos, Scroll Abajo, Buscar String, Link URL).
+    <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="hover" />
+  
+
+  
+    
+    El modo Pánico de Sistema (Errores de Formulario web vacíos, Eliminar Proyecto, Bloqueo de Acceso Seguro).
+    <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="hover" />
+  
+
+  
+    
+    La dopamina. Cuando algo corrió como magia (Test Aprobado en Escuela, Pago Completo Realizado con Éxito, Logros obtenidos).
+    <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="hover" />
+
+# INDEX
+
+# ARQUITECTURA DE ICONOS
+
+
+
+
+  **The UX Language.** En <strong>CODE ME</strong> no dibujamos tiernos vectores decorativos abstractos; 
+  programamos exactas y eficientes *funciones visuales asíncronas* en nuestra interfaz (`UI`). 
+  Exigimos extrema y cruel simplicidad lineal minimalista, precisión técnica universal y coherencia lógica de software para guiar masivamente al ojo del usuario a una brutal conversión.
+
+
+---
+
+
+
+  {/* Estilos */}
+  
+    
+      
+    
+    
+      Leyes inflexibles de diseño general vectorial: Retículas de mapeado, grosores exactos del `Stroke` lineal y el indispensable `Padding` paramétrico de nuestra iconografía.
+      
+    
+  
+
+  {/* Diccionario */}
+  
+    
+      
+    
+    
+      El crudo glosario universalizado de variables de símbolos (`Strings`) con todo el poderoso peso y sólido significado semántico detrás de cada elemento.
+      
+    
+  
+
+  {/* Modos */}
+  
+    
+      
+    
+    
+      Las ramificaciones inalterables del ecosistema visual: O dominas el brutal `8-bits Pixel` Gamificado o te deslizas sobre el frío Navs `Neón` Moderno Vectorial.
+
+# MODO-A
+
+# ICONOGRAFÍA MODO A: 8-BIT ITEMS
+
+
+
+
+  **Gamificación Pura.** No hacemos aburridas insignias de cartón corporativas; en **CODE ME** forjamos *Items* de RPG. 
+  Este es nuestro agresivo modo visual para premios, marketing emocional y reconocimiento táctil de los alumnos.
+
+
+---
+
+### 👾 Tratamiento Visual (`Pixel_Art_Engine`)
+
+**Estilo Directo:** Pixel Art Maduro (Retro-Moderno). <br/>
+**Inspiración Source:** Los inmortales inventarios pesados de grandes RPGs clásicos, la minería de Minecraft y los cofres de Stardew Valley. Los íconos deben sentirse como recompensas reales coleccionables en el universo de Bitxo.
+
+#### Reglas de Construcción:
+- **Outline Mandatorio:** Todo Sprite debe estar anclado a la tierra por un borde negro sólido y grueso (1px a 2px en crudo), separándolo de los fondos de colores como un verdadero *sticker* o ícono de videojuego de consola noventera.
+- **Pintura Plana (Zero-Grads):** Quedan rotundamente prohibidos los insípidos degradados suaves aquí adentro. Rellenamos estos bloques exclusivamente con nuestra paleta dura primaria:
+
+<ColorPalette columns={3}>
+    <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="hover" />
+    <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="hover" />
+    <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="hover" />
+</ColorPalette>
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+- **Insignias de Logro (`Badge_Unlocked`):** Disparadores dopamínicos directos cuando un alumno logra matar un _Bug_ final y termina victorioso un módulo de programación complejo.
+- **Masterclasses y Slides:** Elementos gigantes inyectados al Keynote para ilustrar abstractos inmateriales (Ej: Un candado colosal y pesado pixelado en rosa metálico para enseñar pura Ciberseguridad o un escudo de protección). 
+- **Merchandising:** Stickers para quemar laps viejas de los devs y parches planchables sobre mochilas tácticas.
+
+---
+
+### 🧠 Prompting con Inteligencia Artificial (AIO)
+
+Somos nativos artificiales. En lugar de dibujar pixel por pixel el escudo por 2 horas, nos hemos construido 
+_Prompts_ inquebrantables como un *Hack* eficiente para obligar a Midjourney a parir assets con nuestro ADN exacto en 15 segundos:
+
+<CodeBlock language="bash">
+# [ EXECUTE A.I. WORKFLOW ]
+# Sustituye [OBJETO] por la idea del item (e.g. "Magic Shield" o "Golden Floppy Disk")
+
+A simple pixel art icon of a [OBJETO], thick black outline, flat 
+colors using neon pink and cyan, transparent background, retro 
+video game style asset, 8-bit style, isolated on white --v 6.0
+</CodeBlock>
+
+# MODO-B
+
+# ICONOGRAFÍA MODO B: NEON SYNTAX
+
+
+
+
+  **Interfaz Quirúrgica.** El lado profesional arquitectónico de <strong>CODE ME</strong> exige íconos que comuniquen 
+  la velocidad fría del `Front-End` corporativo. No son píxeles adorables; son los circuitos cortados a láser 
+  y luminosos que guían a la navegación web madura del usuario adulto.
+
+
+---
+
+### ⚛️ Tratamiento Visual (`Vector_Line_Art`)
+
+**Estilo Directo:** _Line Art_ Geométrico Estricto (`Monoline`). <br/>
+**Fuentes Nativas (Open-Source):** Dependemos masivamente de la robustez imperturbable y profesionalidad de **Phosphor Icons** o su primo táctico **Remix Icon**. Ambas forjadas en limpio Open Source general.
+
+#### Configuración Exclusiva del Stroke (Modificación de Marca):
+- **Grosor del Vector:** Forzoso inyectar pesadez técnica. Nada de iconografía "Aérea o Ligera" estilo iOS. Nuestro stroke mínimo es siempre espeso (**`Regular 2px` a `Bold 3px`**).
+- **Esquinas Perimetrales:** `Squarish` absolutas. Cancelamos el estilo UI amigable del 2012; cortamos las puntas para lograr terminaciones `Rectas` siempre que sea posible. Queremos simular conexiones a integrados PCB rudos.
+
+---
+
+### ⚡ La Intervención Obligatoria (Glitch Modification)
+
+La magia visual recae en que no simplemente bajamos el icono gratuito y lo pegoteamos: 
+Nos tomamos explícitamente el valioso tiempo de _"estropear sutilmente"_ al menos una sola esquina en el ilustrador (O si no, borrando mágicamente apenas un milímetro clave del path) para que **simule un micro-glitch hermoso o un chip incompleto abierto**. Así reclamamos universalmente el vector externo como "Propiedad Técnica de la marca".
+
+#### El Efecto de Neón (The Drop-Shadow Glow):
+Todo ícono lineal brillante debe obligatoriamente poseer en su `<Hover>` State Web un efecto de destello de lámpara (`drop-shadow: 0 0 10px #00F0FF`). Literalmente prendiéndose con la estática del cursor inmaculado.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+- Micro-acciones de UI (Pestañas web, iconos diminutos de Redes, botones `Home / Print / Share`).
+- Encabezados de menús de navegación.
+- Todo _Bullet Point_ en extensas e informativas listas técnicas PDF.
+
+
+    
+    <IconShowcase />
+
+# BLUEPRINT
+
+# ILUSTRACIÓN: MODO BLUEPRINT
+
+
+
+
+  **The Technical Core.** Es la estética visual de la ingeniería pura. Reducimos el ruido superficial (texturas / shading) 
+  a su mínima expresión volumétrica para desglosar la matemática y lógica cruda de la programación.
+
+
+---
+
+### 🧮 Concepto y ADN Gráfico (The Wireframe)
+A diferencia de los "renders jugocitos" de 3D, el modo Blueprint emula un riguroso plano arquitectónico trazado con luz fría de fósforo. 
+Transformamos objetos o lógicas en infografías técnicas en crudo usando exclusivamente trazos rectos (`wireframes`), mallas paramétricas densas e intersecciones de geometría sólida, etiquetadas con micro-textos en Monoespacio. El concepto dice: *"No somos magia, somos matemáticas hechas código"*.
+
+### 📐 Casos de Uso (Technical Deploy)
+Exclusivamente usado cuando el propósito del documento/gráfico necesita inspirar absoluta credibilidad intelectual analítica.
+1. **Manuales de Imprenta y Diapositivas Docentes:** Para explicar código estructurado (`If/Else`, `While`).
+2. **Posters Decorativos:** Para las sedes presenciales y ropa Tech-Wear (`Merch`), luciendo estética "Boceto Final".
+3. **Fondos Estructurales (HUDs):** Redes sociales con información estadística (`Insights` o _Facts_ de Ciberseguridad).
+
+### 🖥️ Reglas Estrictas Modulares (Vectores CSS)
+Para validar esta gráfica ante el sistema maestro, sigue las leyes del trazo:
+- **Estilo de Trazo (`stroke`):** Estrictamente líneas ultra finas (1px, 2px), polígonos vacíos (`fill: none`) que asemejen una gigantesca interfaz **HUD** (Head-Up Display) de una nave robótica.
+- **Background (`bg-root`):** Idealmente Oscuro `Dark Mode`, Azul de pantalla de la muerte profunda o, en su caso asombroso impreso, nuestro material de "Papel Ingeniero" de las texturas oficiales.
+- **Acción del Color (`#00F0FF`):** Blanco al 80% o `Cyan Eléctrico` puros radiando de la oscuridad y brillando al contacto.
+
+# HERO
+
+# ILUSTRACIÓN: MODO HERO 3D
+
+
+
+
+  **The Main Attraction.** Objetos masivos voluminosos con un renderizado técnico hiper real y atractivo visual magnético, pautando el peso publicitario (`Marketing & Web`) del diseño.
+
+
+---
+
+### 🎨 Concepto & Meta-Datos Visuales (`render()`)
+El concepto central exige presentar _Objetos Tech_ flotando etéreamente en entornos de Gravedad Cero (`Y=0`). Visualmente esto representa una abrumadora creatividad desatada fuera de las cajas convencionales escolásticas. **Nunca, jamás** deben sentirse "infantiles"; sino más bien como gadgets vanguardistas filtrados de un _Start-Up_ secreta, bañados de _Neón_.
+
+### 📍 Casos de Uso Aprobados (`targets_array`)
+Estos gráficos colosales son pesados (visualmente). Su uso estricto se reserva para los momentos _A-HA_ de la marca, cuando necesitamos acaparar 100% la atención del usuario sin peros:
+1. **Encabezados maestros de Sitio Web** (`Hero Sections`).
+2. **Portadas (Covers)** masivas de Cursos completos o Retos/Misiones.
+3. Campañas y Anuncios pagados de meta en **Instagram/TikTok** de extremo y brutal impacto visual y enganche.
+
+### 📐 Reglas Estrictas de Geometría e Iluminación (CSS Rules)
+Antes de presionar exportar, valida tu archivo gráfico (`.png` o `.webp` transparente) contra las reglas de sistema:
+
+- **Materiales 3D:** Usa resinas oscuras de plástico `mate`, recubrimientos de `cristal esmerilado` grueso (glassmorphism físico) o piezas expuestas de metal emitiendo `Neón puro`.
+- **Global Illumination:** Puramente dramática y contrastante. Abandona las luces blancas genéricas puestas cenitalmente. Ilumina las piezas exclusivamente utilizando focos fuertes de recortes de colores `Cyan` y `Magenta` laterales.
+- **Background (`bg-root`):** Todas estas ilustraciones deben respirar obligatoriamente dentro y solo dentro del majestuoso fondo **Obsidiana Digital (`#0F172A`)**. Se prohíbe rotúndamente quemarlas sobre un liso y triste blanco quemado o cualquier tono pastel.
+
+# INDEX
+
+# ARQUITECTURA DE ILUSTRACIÓN
+
+
+
+
+  **The Matrix Render.** Nuestras ilustraciones no son simples "dibujos amigables" vectoriales planos en 2D. 
+  En **CODE ME** renderizamos universos de profunda carga tecnológica; desde el realismo volumétrico 3D crudo, hasta la lógica inamovible del bloque de *Voxel* en esteroides lúdicos, rematando con la altísima precisión de planos y *Blueprints*.
+
+
+---
+
+
+
+  {/* Modalidades */}
+  
+    
+      
+    
+    
+      _Mode_ 1: Hero 3D extremo para Marketing y Leads. _Mode_ 2: El denso ecosistema Voxel. _Mode_ 3: Blueprint para pesados manuales de ingeniería.
+      
+    
+  
+
+  {/* Recursos */}
+  
+    
+      
+    
+    
+      Cargas de librerías globales masivas (Saly 3D, Handz, Kenney Voxel) y los métodos estandarizados para apropiarnos de ellas lícitamente en UI.
+      
+    
+  
+
+  {/* Post-procesado */}
+  
+    
+      
+    
+    
+      El algoritmo mágico de post-producción: Módulos de adición de brillos Neón, filtros fotográficos y RGB Split para homogenizar piezas gratuitas.
+
+# INTEGRACION
+
+# INTEGRACIÓN & POST-PROCESADO
+
+
+
+
+  **The Final Render.** Una regla de hierro: Absolutamente cualquier ilustración cruda (`RAW asset`) 
+  debe pasar por nuestro **script visual de Post-Procesado** antes de compilarse para publicación.
+
+
+---
+
+### 🔮 El Script "Neon Glow" (`box-shadow`)
+Para asegurar la cohesión estética de los iconos lineales y la rudeza de los elementos pixelados en el Modo Voxel, siempre se les debe inyectar un agresivo **resplandor exterior**. Este efecto óptico simula con precisión la radiación de una pantalla CRT de los ochentas o la quema de un tubo de luz neón físico.
+
+Se aplica un doble nivel cromático flotante (`drop-shadow`):
+
+```css
+/* -- THE NEON GLOW PROTOCOL -- */
+
+.asset-glow-cyan {
+  /* Filtro base para elementos estructurales y Tech */
+  filter: drop-shadow(0 0 5px var(--cm-cyan-electrico)) 
+          drop-shadow(0 0 15px var(--cm-cyan-electrico));
+}
+
+.asset-glow-pink {
+  /* Filtro agresivo para elementos puros de acción/alerta (CTAs) */
+  filter: drop-shadow(0 0 5px var(--cm-rosa-ajolote)) 
+          drop-shadow(0 0 15px var(--cm-rosa-ajolote));
+}
+```
+
+### 📺 Aberración Cromática (`RGB Split`)
+Para portadas estelares o anuncios de performance en Meta, los gráficos principales (`Hero Mode`) sufren una levísima separación de sus canales Rojo, Verde y Azul (`RGB Split`) en los bordes. Esto le grita al subconsciente del espectador que la imagen no es un dibujo clásico impreso, sino un _Glitch digital_ que rompió la interfaz de la realidad.
+
+# RECURSOS
+
+# RECURSOS (OPEN_SOURCE)
+
+
+
+
+  **The Tool Stack.** Para mantener una agilidad hiper constante y consistencia gráfica envidiable a nivel equipo, 
+  utilizamos tácticamente las siguientes librerías de componentes tridimensionales y paquetes de código abierto.
+
+
+:::warning ⚠️ ALERTA DE COMPILACIÓN (Raw Assets)
+Nunca debes usar ni implementar estos _assets_ "tal cual" (descarga cruda RAW). **Siempre** debes pasarlos forzosamente 
+por nuestro filtro y _Script de color The Remix (Code-Me)_ para que pierdan su identidad genérica y se fundan al núcleo de la marca.
+:::
+
+---
+
+### 🚀 Librerías 3D (`Para Modo Hero`)
+
+1. **SALY (Comunidad Web)**
+   - **Estilo Render:** 3D caótico, ultra inflado y fluidamente tecnológico (Rubber-Hose 3D).
+   - **Aplicación UX:** Empleado estrictamente para Personajes flotando frente a computadoras masivas y VR headsets. Es ideal para "humanizar" radicalmente el frío código en portadas de cursos.
+
+2. **HANDZ (Librería Técnica)**
+   - **Estilo Render:** Manos masivas cartoónicas 3D en mil posiciones e interacciones, con mangas de colores vibrantes.
+   - **Aplicación UX:** Para señalar orgánicamente zonas críticas (como CTAs gigantes) o sostener celulares y ventanas (`Mockups`).
+
+---
+
+### 🕹️ Gamificación (`Para Modo Voxel`)
+
+1. **KENNEY ASSETS (Game Dev Hub)**
+   - **Estilo Render:** Gráficos puramente enfocados a la maquila de videojuegos indie. `Sprites`, `UI Boards` y maravillosos modelos `Low-Poly`.
+   - **Aplicación UX:** Creación brutalista de interfaces gamificadas, tileset para mapas isométricos gigantescos de aventuras de código.
+
+2. **GAME-ICONS.NET**
+   - **Estilo Render:** La librería suprema e infalible de puros Iconos formato RPG mágico, completamente monocromáticos.
+   - **Aplicación UX:** Empleados como Iconos gloriosos de "Skills" duras (Habilidades desbloqueadas) y "Power-ups".
+   - **El Hack Técnico:** Aplicarles imperativamente un `Drop-Shadow Neón` oscuro para volverlos trofeos cibernéticos de luz sólida.
+
+---
+
+### 📐 Librerías Estructurales (`Para Modo Blueprint`)
+
+1. **LUCIDE / RESHOT**
+   - **Estilo Render:** Vectores y UI `SVG` impecables, clínicos y espantosamente limpios.
+   - **Aplicación UX:** Para mapear con bisturí absoluto densos Diagramas de Flujo lógicos, organigramas y esquematización brutalista visual de las pantallas de nuestro sistema. Extruyéndolas con _Neon Glow_.
+
+# VOXEL
+
+# ILUSTRACIÓN: MODO VOXEL BUILDER
+
+
+
+
+  **El Entorno de Códificación Nativo.** El mundo lúdico diseñado y pre-procesado visualmente como perfectos **bloques de construcción**, 
+  conectando a bajo y alto nivel con la geometría cruda de nuestro Logotipo Corporativo (El símbolo pixelado de Bitxo).
+
+
+---
+
+### 🧱 Concepto y ADN Gráfico (The Matrix)
+A diferencia de la pureza hiperrealista del 3D del *Modo Hero*, el **Modo Voxel** no busca verse real; busca verse construible. Es un grito absoluto a la cultura de Minecraft o Roblox que traen inyectada nuestros jóvenes por default. Este modo dicta que la tecnología no es mágica, sino que son pequeños bloques de código (`Píxeles 3D = Voxels`) que si los apilas correctamente, puedes programar cualquier cosa que imaginaste.
+
+### 🎮 Casos de Uso (UI Triggers)
+Debido a la naturaleza lúdica de los bloques, su peso visual lo usamos para detonadores emocionales gamificados y componentes masivos interactivos, como:
+1. **El Roadmap del Semestre:** Mapas isométricos masivos por los que navega la plataforma de misiones del *Bootcamp*.
+2. **Avatares Estudiantiles:** Fotoretratos digitalizados con un script `pixelate()` y `depth_map()` a la medida para los alumnos.
+3. **Badges:** Iconos e insignias grandes tridimensionales coleccionables (*Logros*) en el dashboard de cada chico que termine un curso en Python.
+
+### 🚥 Reglas Estrictas Modulares (Physics Engine)
+Las reglas que mantienen el servidor corriendo sin `Glitch` feo son:
+- **Estética Formal:** Bloques limpios. Un look puro de `8-bits masivos con volumen`. (Cubos isométricos).
+- **Colores (`var colors`):** Usar la paleta de Acentos de Code-Me saturada hasta el `.9` en brillo, creando piezas de un contraste brutal listos para el Neón o para la imprenta.
+- **Vibe:** "Mexican Retro-Future".
+
+# INDEX
+
+# IDENTIDAD VISUAL
+
+
+
+
+  Bienvenido al `Kernel` de la Identidad Visual de <strong>CODE ME</strong>. Nuestra marca no es solo decoración; es un robusto sistema de diseño de alto rendimiento (*Design System*) estructuralmente adaptado para la era del desarrollo y las tecnologías exponenciales (AIO/IA).
+
+
+---
+
+
+
+  {/* Logotipo */}
+  
+    
+      
+    
+    
+      Anatomía cruda, usos correctos, zonas de padding perimetral (Zonas de Resguardo) y sistema binario de errores en nuestra firma maestra.
+      
+    
+  
+
+  {/* Colores */}
+  
+    
+      
+    
+    
+      Voltaje de color: Nuestra paleta agresiva RGB brillante y los parches químicos CMYK para imprentas. Guías vitales de contraste y salud visual.
+      
+    
+  
+
+  {/* Tipografía */}
+  
+    
+      
+    
+    
+      Escritorio de fuentes: La masiva principal y la legible secundaria. Lineamientos de jerarquía técnica (H1-H6) y tipografía Hacker (Monoespacio).
+      
+    
+  
+
+  {/* Iconos */}
+  
+    
+      
+    
+    
+      El lenguaje simbólico ultra preciso de Code Me. Protocolos arquitectónicos de diseño de vectores y aplicaciones para Interfaces de Usuario.
+      
+    
+  
+
+  {/* Ilustraciones */}
+  
+    
+      
+    
+    
+      Los Mundos 3D "Hero", Voxel lúdico y la esquemática "Blueprint". Rigurosas guías de Color Post-procesado obligatorias.
+      
+    
+  
+
+  {/* Patrones */}
+  
+    
+      
+    
+    
+      La lluvia cruda de sintaxis al infinito, el Textil Digital Azteca y el grueso ruido estático de compilación para espolvorear profundidad.
+      
+    
+  
+
+
+
+---
+
+# ERRORES
+
+# ERRORES DE SISTEMA (DONT'S)
+
+
+
+
+  **The Zero-Tolerance Framework**. La absoluta integridad sólida y visual técnica del sistema corporativo principal de **CODE ME** no es un factor negociable a tu propio gusto artístico. Rotundamente calquier alteración fotográfica o vectorial no autorizada se clasifica agresivamente como una rotura masiva (**"Bug"**) que destruye la cuidada coherencia óptica del sistema universal. Evita a toda costa compilar las siguientes malas prácticas (anti-patrones).
+
+
+---
+
+### 🚨 La Regla Binaria Inquebrantable (`Strict Boolean = true`)
+
+En nuestro ecosistema radical y rudo, la matriz gráfica de la marca es absoluta y enteramente binaria de nacimiento: **O está Correcta (Valor 1, TRUE) o tristemente es un Error (Valor 0, FALSE)**. En ningún entorno creativo autorizamos permitidas falsas interpretaciones degradadas de sus colores nativos de código ni distorsiones "a tu propio gusto estético" de las cajas bases del archivo fuente inmaculado.
+
+
+    <ErrorShowcase />
+
+
+
+  
+  
+    Nuestra insignia corporativa, ese bloque de logotipo, verdaderamente es la inquebrantable bandera estética de todo nuestro clan pesado digital (`The Matrix`). 
+    Si en algún momento oscuro tu cabeza llega a dudar silenciosamente si la gigantesca aplicación gráfica o web comercial que acabas de aventarte te salió bien, o la manchaste, 
+    te detienes un rato, echas humo atrás y te cuestionas con brutal humildad sincera lo siguiente en voz altísima: <br/><br/>
+    <strong><em>"¿Se ve como un glorioso videojuego Sci-Fi masivo Grado AAA importado de Tokyo, o se ve malamente como un horrendo y pasivo folletillo infantil de Word en escuela pública?"</em></strong>. <br/><br/>
+    Si por lo más mínimo en la balanza visual huele al segundo, entonces <strong>rompiste</strong> todo nuestro valioso <em>Source Code</em>. Regresa sin más, bórralo y re-compile that file again.
+
+# ESCALABILLIDAD
+
+# ESCALA MÍNIMA (Responsiveness)
+
+
+
+
+  **The Core Sandbox**. El ADN geométrico de <strong>CODE ME</strong> debe permanecer absolutamente intacto y agresivo visualmente en cualquier escala de bits compilada. Desde pesadas vallas publicitarias en carreteras OOH, hasta ridículamente minúsculos avatares en smartwatches; _la legibilidad brutalista de nuestro código es nuestro estándar innegociable_ de control de calidad `(QA)`.
+
+
+---
+
+### 📏 Pruebas de Medidas (Límites de Quiebre UX)
+
+Existen escalas mínimas tolerables para imprimir y cargar los assets web antes de que colapsen ruidosamente sobre sí mismos (El efecto de la Mancha de Pixeles / _Blurry mess_). 
+
+Nunca escales el logo por debajo de estos anchos mínimos:
+
+
+  
+    
+      
+    
+    
+      
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Logo Completo</span>
+        <span className="spec-value" style={{ color: 'var(--cm-rosa-ajolote)' }}>100px <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      
+      
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Isotipo Aislado</span>
+        <span className="spec-value" style={{ color: 'var(--cm-rosa-ajolote)' }}>32px <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      
+      
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Barra Horizontal Extensa</span>
+        <span className="spec-value" style={{ color: 'var(--cm-rosa-ajolote)' }}>140px <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      
+    
+  
+
+  
+    
+      
+    
+    
+      
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Logo Completo</span>
+        <span className="spec-value" style={{ color: 'var(--cm-cyan-electrico)' }}>25mm <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      
+      
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Isotipo Aislado</span>
+        <span className="spec-value" style={{ color: 'var(--cm-cyan-electrico)' }}>10mm <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>ancho min.</small></span>
+      
+      
+        <span className="spec-label" style={{ fontWeight: 'bold' }}>Métrica de Densidad</span>
+        <span className="spec-value" style={{ color: 'var(--cm-cyan-electrico)' }}>300 DPI <small style={{ color: 'var(--cm-blanco-consola)', opacity: 0.6 }}>resolución min.</small></span>
+      
+    
+  
+
+
+
+
+<ScalabilityShowcase />
+
+# FONDOS-PERMITIDOS
+
+# FONDOS PERMITIDOS (BG Check)
+
+
+
+
+  **The Natural Habitat.** Nuestro entorno nativo es la oscuridad informática (El Modo Noche). 
+  El logotipo maestro con tonos Neón está literalmente diseñado conceptualmente para brillar, emitir luz masiva (`Glow`), 
+  jamás para absorber la tristísima y apagada luz blanca de un fondo claro de aficionado.
+
+
+---
+
+### 🎨 Background Check Obligatorio (`A/B Test`)
+
+Siempre que diseñes la UI para web o para una campaña de impresión o un espectacular rudo a 30 metros de altura, comprueba el background de inmediato al colocar a tu _Main Logo_. 
+
+Si tu layout va a colocar el logo de impacto encima de la imagen cruda de una foto real compleja, somete esa foto fotográficamente subyacente primero a este estricto procesamiento: Oscurécela pesadamente con opacidades negras (`#0F172A`), mátale la naturalidad de brillos distractores o inyéctales puros tonos Cyberpunk (Rojos / Cyanes fuertes). La marca va por encima siempre dominando como una luz robótica en alta fidelidad fotográfica.
+
+
+    <BackgroundShowcase />
+
+
+:::caution 🚨  FATAL OVERWRITE DETECTED: LA REGLA DE ORO DE LOS CONTRASTES
+Nunca, pero nunca trates artísticamente de "forzar" perezosamente un logo de neón sobre texturas densamente grises o fondos insípidamente blancos de escaso ruido (`Low Contrast`). 
+Si el fondo gráfico de tu proyecto maestro está forzado inherentemente a ser Blanco / Claro corporativamente y no admite _Dark Mode UI_, tú debes abortar e **implementar inmediatamente el archivo o PNG oficial del logotipo en color negro asimétrico monocromático**.
+:::
+
+# INDEX
+
+# LOGOTIPO
+
+
+  
+    El logotipo de <strong>CODE ME</strong> es mucho más que un identificador visual; es nuestra firma en el código, el sello de calidad de nuestro clan y el símbolo de la intersección entre el desarrollo y el diseño premium.
+  
+
+
+
+  <img 
+    src={useBaseUrl('/img/logos/Master_Dark.svg')} 
+    alt="Logo CODE ME Master" 
+    style={{ maxWidth: '400px', width: '100%' }} 
+  />
+
+
+## SISTEMA DE NAVEGACIÓN
+
+En esta sección encontrarás todas las especificaciones necesarias para implementar nuestra marca con precisión técnica:
+
+
+  
+    
+      <span className="icon">🛡️</span>
+      
+    
+    
+      Proporciones, retículas y el espacio de respeto necesario para que el logo respire.
+      
+    
+  
+
+  
+    
+      <span className="icon">🌓</span>
+      
+    
+    
+      Comportamiento del logo sobre diferentes superficies: desde el modo Obsidiana hasta el Ink Mode.
+      
+    
+  
+
+  
+    
+      <span className="icon">📏</span>
+      
+    
+    
+      Tamaños mínimos recomendados para garantizar legibilidad en medios físicos y digitales.
+      
+    
+  
+
+  
+    
+      <span className="icon">🚫</span>
+      
+    
+    
+      Un listado de los bugs visuales más comunes y cómo evitarlos para no romper la marca.
+
+# ZONA SEGURA
+
+# ÁREA DE SEGURIDAD (Padding)
+
+
+
+
+  **The Core Sandbox**. Para garantizar obsesivamente la legibilidad visual y el impacto contundente de la marca corporativa, 
+  el logotipo oficial debe respirar aire puro. Exige por sistema **un espacio libre bloqueado** lejos de otros elementos sucios gráficos, texto apretado o cuellos perimetrales.
+
+
+---
+
+### 📐 Modulación de Medidas (La Unidad "X")
+No medimos en centímetros estériles; el logo se autodefiende matemáticamente con sus propias proporciones vivas, sin importar a qué aberrante tamaño `(width / height)` lo escales.
+- **La Unidad `X`:** En nuestro sistema de medición visual, se declara universalmente a `X` como la medida física vertical que tenga exactamente **la altura de la letra gruesa "O"** en la palabra `CODE`.
+
+### 🛡️ Regla General del Área de Defensa
+- **Regla Estricta (`padding: 1X`):** El espacio mínimo libre y sin ruidos alrededor del logotipo maestro debe ser eternamente de al menos **`1X`** hacia arriba, abajo, izquierda y derecha. Sin piedad.
+- **Excepción Front-end:** En plataformas web puras de UI muy reducida (como apretados Navbar de celulares, Footers minúsculos o banners de Display Ads), el _padding vertical_ puede comprimirse al **`0.5X`** si la API de diseño lo exige de vida o muerte. 
+
+<LogoRules />
+
+:::warning ⚠️ FATAL ERROR. LOG ERROR DETECTED:
+Ningún elemento ajeno invasor (títulos gigantes paralelos, botones de llamado a la acción perdidos, links sueltos, o ilustraciones colosales de campañas) puede sobreescribir este perímetro imaginario de la marca JAMÁS.
+:::
+
+<SafeZoneCalculator />
+
+# GENERACION-IA
+
+## Generación con IA
+
+
+
+### Instrucciones de uso
+
+1. **Copia y pega** el bloque de texto completo en tu generador de imágenes por IA.
+2. Asegúrate de que tu generador soporte la relación de aspecto que necesitas (ej. `--ar 16:9` para presentaciones o `--ar 1:1` para posts de Instagram).
+3. Si el resultado es demasiado intenso, añade al final: `very subtle`, `low contrast`, `muted`.
+
+### Patrón A: The grid
+
+**Uso:** Fondos generales donde habrá texto encima. Debe ser casi invisible.
+**Paleta:** RGB (Digital Nativo).
+
+```md
+/imagine 
+prompt: Seamless background texture, ultra-minimalist technical blueprint style. 
+A precise geometric grid pattern made of ultra-thin, hairline lines (1px weight). 
+The grid should feel like a futuristic UI overlay, perfectly structured and repetitive. 
+The lines must be barely visible, with extremely low opacity (around 5% to 10%), 
+creating a subtle structural feel without distracting. Background Color: 
+Deep Obsidian Blue HEX #0F172A. Grid Line Color: Faint Electric Cyan HEX #00F0FF. 
+No other elements, just pure clean grid structure. 8k resolution, highly detailed texture for web background. --tile
+```
+
+### Patrón B: Lluvia de Sintaxis
+
+**Uso:** Portadas, banners y áreas de branding con poco texto. Nivel de ruido medio.
+**Paleta:** RGB (Digital Nativo).
+
+```md
+/imagine 
+prompt: Seamless background pattern, cyberpunk coding environment aesthetic. 
+The style is "Floating Syntax": scattered programming symbols and characters 
+floating in zero gravity without a specific direction. Elements must include 
+specific syntax markers: curly brackets `{ }`, closing tags `</>`, comment slashes `//`, 
+semicolons `;`, square brackets `[ ]`, underscores `_`, and inequality operators `!=`. 
+The font style must resemble a technical monospaced font like JetBrains Mono, bold and angular. 
+The symbols vary slightly in size and rotation but remain sparse. Opacity is low-to-medium (around 15% to 20%), 
+creating ambient visual noise. Colors: Glowing Neon Pink HEX #FF2A6D and Electric Cyan HEX #00F0FF against 
+a deep Obsidian background HEX #0F172A. No recognizable words, just abstract code symbols. 4k resolution. --tile
+```
+
+### Patrón C: Textil Digital (Pixel Weave)
+
+Este patrón cuenta con dos versiones debido a la finalidad del patrón, este podrá ser usado con la paleta de colores RGB (Digital Nativo) o CMYK (Impresión).
+
+**Uso:** Merch, separadores, reverso de tarjetas. Nivel de ruido alto.
+
+#### Versión 1.0: Digital (RGB)
+
+**Paleta:** RGB (Digital Nativo).
+
+```md
+/imagine 
+prompt: Seamless textile pattern design, "Mexa-Future Glitch" style. 
+A reinterpretation of traditional Mexican Zapotec and Otomi geometric 
+greca patterns (stepped frets, repetitive geometric motifs), but constructed 
+entirely out of 8-bit pixels, voxel blocks, and digital glitch artifacts. 
+It should look like a corrupted digital tapestry or a low-resolution video 
+game texture from the 90s. High contrast and vibrant. Colors (RGB Neon): 
+Intense glowing Neon Pink HEX #FF2A6D, Electric Cyan HEX #00F0FF, 
+and Lime Green HEX #05FF00 against a solid Deep Obsidian background 
+HEX #0F172A. The pattern should be dense, repetitive, and tileable, 
+suitable for fabric printing. 8k resolution, detailed pixel texture. --tile
+```
+
+#### Versión 2.0: Impresión (CMYK)
+
+**Paleta:** CMYK (Impresión).
+
+Esta versión usa los códigos HEX de "simulación de tinta" que definimos en el Brandbook. La IA generará una imagen con colores más apagados y realistas para impresión en papel/tela, evitando la falsa expectativa del neón.
+
+```md
+/imagine 
+prompt: Seamless textile pattern design for physical print, 
+"Mexa-Future" style adapted for ink on fabric. A reinterpretation 
+of traditional Mexican Zapotec geometric patterns constructed from 
+8-bit pixels and digital noise. The aesthetic is printed matter, 
+not digital screen glow. Colors must be muted to simulate CMYK 
+ink limits (Print Simulation HEX Codes): Deep Rich Black HEX #000000 
+as background. Pattern colors are Process Magenta HEX #E6007E, 
+Process Cyan HEX #00AEEF, and Acid Green HEX #80C342. The colors 
+should look like pigment on matte paper, without fluorescent glow or 
+bloom effects. Dense, repetitive, tileable pattern. 
+High resolution for print. --tile
+```
+
+# INDEX
+
+# SISTEMA DE PATRONES
+
+
+  Los patrones en <strong>CODE ME</strong> generan profundidad y textura sin comprometer la legibilidad. Son el "noise" de nuestra marca.
+
+
+
+  {/* Reticula */}
+  
+    
+      <span className="icon">🏁</span>
+      
+    
+    
+      Precision geometrica. El esqueleto visual que sostiene nuestras interfaces y materiales impresos.
+      
+    
+  
+
+  {/* Lluvia */}
+  
+    
+      <span className="icon">💨</span>
+      
+    
+    
+      Inmersión digital. Símbolos de programación dispersos para fondos dinámicos y minimalistas.
+      
+    
+  
+
+  {/* Textil */}
+  
+    
+      <span className="icon">🇲🇽</span>
+      
+    
+    
+      La raiz Mexa. Grecas tradicionales reinterpretadas a través de píxeles y glitches modernos.
+      
+    
+  
+
+  {/* Reglas */}
+  
+    
+      <span className="icon">📏</span>
+      
+    
+    
+      Como aplicar patrones sin generar fatiga visual o ruido innecesario en la comunicacion.
+      
+    
+  
+
+  {/* IA */}
+  
+    
+      <span className="icon">🤖</span>
+      
+    
+    
+      Prompts optimizados para generar bases de patrones bajo la identidad de Code Me.
+
+# LLUVIA-SINTAXIS
+
+# PATRONES: LLUVIA DE SINTAXIS
+
+
+
+
+  **Ambient Noise.** Nuestro propio código fuente re-compilado en el espacio vacío. Físicamente representa 
+  la inmersión total del alumno ("Entrando en _The Matrix_") cuando está sumergido leyendo su pantalla.
+
+
+---
+
+### ☕ Comportamiento Visual (`Z-index: -1`)
+- **Nivel de Ruido:** Medio (Ambiental).
+- **Tratamiento Gráfico:** Letras sueltas exclusivas del código (`< > { } / ; * =`) o puras palabras reservadas de funciones, dispersas casi caóticamente como si flotaran despresurizadas sin gravedad en el fondo del gráfico.
+
+### ⚙️ Configuración del Sistema (Specs)
+
+**Tipografía Base:** Estrictamente fuentes monoespaciadas legibles por sistema. (*Ej. JetBrains Mono o Fira Code*).
+**Variación (Math.random):** Rotación y escala sumamente leve, no debe molestar a la vista al rotar. Solo lo suficiente para crear capas de *Parallax*.
+
+**Materiales RGB Aprobados:**
+<ColorPalette columns={2}>
+    <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.15} variant="hover" />
+    <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.15} variant="hover" />
+</ColorPalette>
+
+**Opacidad Global:** Entre el `10%` y el `20%`. Si el fondo distrae la mirada, baja el brillo drásticamente o la legibilidad general fallará tu test final.
+
+**Fondo Nativo (`background-color`):**
+
+    <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={0.1} variant="hover" />
+
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar este recurso cinético?
+- Portadas corporativas y cubiertas literarias pesadas.
+- Headers / Banners panorámicos grandes en Redes Sociales (Facebook, LinkedIn).
+- Espacios muertos en lonas o Banderas publicitarias urbanas (`OOH`).
+
+# REGLAS
+
+# REGLAS DEL SISTEMA VISUAL (PATRONES)
+
+
+
+
+  **Strict Mode:** Los patrones visuales y el "Ruido" son herramientas sumamente peligrosas si se dejan libres. 
+  Existen _Flags_ y Validadores básicos que debes correr mentalmente antes de exportar cualquier gráfico ruidoso para redes, UI o impresos.
+
+
+---
+
+### 📉 La Regla Maestra del 10% (Opacidad Base)
+Si vas a colocar letras importantes (`legibilidad = true`) flotando directamente sobre un patrón visual decorativo, **NUNCA DEBES** usar ese patrón al 100% o siquiera al 30% de saturación u opacidad. El patrón deberá estar visualmente ahogado en sombras, casi invisible (`opacity: 0.1` máximo como marca de agua pura / Watermark sutil). La información cruda y educativa siempre manda (*Content First*).
+
+### 🎛️ Warning: No Mezclar Frecuencias (Overload)
+Como regla general de UX: Jamás debes incrustar o solapar elementos muy estriados (La "Lluvia de Sintaxis") directamente enzima o en la misma capa base que un patrón geométrico súper destructivo (El "Textil Digital"). Al hacer esto generarás una masiva cancelación del mensaje final en el ojo del usuario (Saturación/Ruido inútil). Un objeto denso principal a la vez por encuadre visual. Piensa en Minimalismo Cyberpunk.
+
+### ⚡ El `Glitch` como Acento Delicado, no como excusa.
+Puedes agregar una muy fina capa general de "Ruido Blanco de TV Oscura" (Static Noise) o tal vez espolvorear sutiles líneas horizontales rotas ("Scanlines RGB") rindiendo poderoso homenaje a la televisión vieja (_Retro-tech_) directo a las FOTOS de los alumnos o a los bordes UI... Pero jamás intentes aplicar filtros Glitch sobre **textos legales, contratos, bases del evento, horas críticas, precios o currículum académico**. El Glitch se usa estrictamente como recurso ornamental cinemático perimetral, jamás sobre un punto de lectura obligatoria.
+
+# RETICULA-MAESTRA
+
+# PATRONES: RETÍCULA MAESTRA
+
+
+
+
+  **The Under-Layer.** La retícula maestra es el patrón que otorga estructura pura y orden absoluto al caos cibernético. 
+  Conceptualmente simboliza el clásico "cuaderno de matemáticas" traído bruscamente al año 2077.
+
+
+---
+
+### 📏 Comportamiento Visual (`Z-index: 0`)
+- **Nivel de Ruido:** Extremadamente bajo (Sutil).
+- **Tratamiento Gráfico:** Una cuadrícula geométrica (_grid_) perpetua y constante, dibujada con líneas ultrafinas (1px o 0.5px). 
+
+### ⚙️ Configuración del Sistema (Specs)
+
+**Color de Lógica:** No debe robar atención.
+<ColorPalette columns={2}>
+    <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.1} variant="hover" />
+    <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.1} variant="hover" />
+</ColorPalette>
+
+**Opacidad Global:** Entre el `5%` y el `10%` máximo. Si destaca más que el texto, es un bug de diseño.
+
+**Fondo Nativo (`background-color`):**
+
+    <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={0.1} variant="hover" />
+
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar este patrón repetitivo?
+- Fondos bases principales y globales para presentaciones (Slides).
+- Hojas de trabajo impresas entregables en salón (emulando "Papel Milimétrico").
+- En el sitio web (`body { background-image: ... }`).
+
+# TEXTIL-DIGITAL
+
+# PATRONES: TEXTIL DIGITAL (Pixel Weave)
+
+
+
+
+  **La raíz Nativa MEXA.** Es nuestra orgullosa reinterpretación digital pura y violenta de los milenarios patrones textiles tradicionales regionales (zapotecos, bordados otomíes o talavera), pero construyéndolos hoy con inyectada **matriz de píxeles** masivos o destructivos mapas de **Glitch**.
+
+
+---
+
+### 👾 Comportamiento Visual (`Decorators()`)
+- **Nivel de Ruido:** Extremadamente Alto (`Decorativo/Llamativo`).
+- **Tratamiento Gráfico:** Figuras estrucutrales geométricas escalonadas fuertemente, clásicas _grecas_ aztecas o prehispánicas que en lugar de parecer hilo de telar de cintura, parecen graves errores físicos de carga de memoria VRAM (Glitch de GPU), o puro arte `Low-Res de 8-bits`. Reclamamos nuestro folclore nacional para hackearlo visualmente con tecnología cruda.
+
+### ⚙️ Configuración del Sistema (Specs)
+
+Este es el único sistema donde usamos el peso total de nuestras variables de neón cromáticas conjuntas sin temor:
+
+**Materiales RGB Aprobados:**
+<ColorPalette columns={3}>
+  <ColorCard name="Rosa Ajolote" color="#FF2A6D" opacity={0.8} variant="default" />
+  <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.9} variant="default" />
+</ColorPalette>
+<ColorPalette columns={3}>
+  <ColorCard name="Verde Terminal" color="#05FF00" opacity={0.9} variant="default" />
+  <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={1} variant="default" />
+</ColorPalette>
+
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+Dada su altísima saturación (High-Noise), evítalo siempre como fondo central de la pantalla `main()`. Se inyecta exclusivamente en contornos secundarios y objetos urbanos pesados:
+- **Merchandising:** Detalles en estampado de mangas largas de sudaderas (`TechWear`), patrones tejidos en calcetines corporativos (Jacquard de hilo), arte masivo debajo de las viseras de las gorras negras.
+- **Divisores UI:** Modestos y mínimos separadores de bloque (borders de `<hr>` de 10px alto).
+- **Tarjetas Personales:** Cubriendo en enorme proporción el majestuoso y complejo _Backend_ (El reverso) oscuro liso de nuestras business-cards (`Tarjetas de Identificación de Sistema`).
+
+# GENERACION-IA
+
+## Generación con Inteligencia Artificial
+
+Usa estos prompts para generar las bases de textura en alta resolución.
+
+### MONITOR CRT (Estilo RGB / Luz)
+
+Este prompt genera una textura lista para usar en modo "Overlay" sobre tus diseños digitales.
+
+```md
+Full frame abstract texture of a vintage CRT monitor screen close-up. Visible horizontal scanlines, RGB phosphor triad dots pattern. Dark aesthetic with subtle chromatic aberration (red/blue shift) on the edges. Digital noise, slight glow and bloom effect typical of 90s screens. The dominant tone is deep black/grey. No text, no recognizable objects, just the raw screen texture. High resolution, 8k. --tile
+```
+
+#### Configuración de Color
+
+    <ColorPalette columns={2}>
+        <ColorCard name="Obsidiana Digital" color="#0F172A" opacity={0.1} variant="hover" />
+        <ColorCard name="Cyan Eléctrico" color="#00F0FF" opacity={0.1} variant="hover" />
+    </ColorPalette>
+
+### PAPEL DE INGENIERÍA (Estilo CMYK / Tinta)
+
+Este prompt simula la textura física para fondos de documentos o posts "estilo impreso".
+
+```md
+Full frame macro texture of matte bond paper or architectural blueprint paper. Visible paper fiber grain, slight unevenness in the surface. The look is industrial, raw, and analog. On top of the paper, a very subtle layer of xerox toner noise (photocopy texture) in black ink. The paper color should be a very clean off-white (almost white). No watermarks, no text. Realistic lighting, soft shadows indicating paper texture. 8k resolution. --tile
+```
+
+#### Configuración de Color
+
+    <ColorPalette columns={2}>
+        <ColorCard name="Blanco Consola" color="#F8FAFC" opacity={0.1} variant="hover" />
+        <ColorCard name="Cyan Impreso" color="#00AEFF" opacity={0.1} variant="hover" />
+    </ColorPalette>
+
+### GLITCH ESTÁTICO (Caos Creativo)
+
+Para cuando necesitas una textura de fondo más agresiva.
+
+```md
+Abstract digital glitch texture background. Heavy static noise, data mosh effects, pixel sorting artifacts. A chaotic mix of vertical and horizontal signal interference lines. Colors are strictly confined to a palette of Deep Obsidian #0F172A, Neon Pink #FF2A6D, and Electric Cyan #00F0FF. Cyberpunk dystopia aesthetic, broken screen effect. High contrast, sharp edges. No text. 4k resolution.
+```
+
+# IMPLEMENTACIONES
+
+# APLICACIÓN DE TEXTURAS (Hacks)
+
+
+
+
+  **Strict Mode:** Reglas duras y rápidos recortes en código para integrar el abanico de texturas densas 
+  de **CODE ME** en plena producción sin destruir la optimización (UX) o explotar servidores de impresión.
+
+
+---
+
+### 🌐 Hack para Web Frontend (Optimización CSS)
+
+No debes estrangular nunca tu tiempo de carga web mandando a pedir (`Fetch`) mapas de bits gigantescos y extremadamente pesados de "Ruido de Cine" al sistema. Utiliza matemáticamente el poder vectorial puro integrado con el render de tu navegador, inyectando SVG directo en el objeto CSS. 
+
+Esto pesa cero *Kilobytes* literales y se regenera ad-infinitum modularmente:
+
+`# style.css`
+```css
+/* Generando fricción sin afectar performance (LCP/FCP) */
+.bg-noise_root {
+    background-color: var(--cm-obsidiana);
+    /* Inyección Inline de SVG de ruido aleatorio puro */
+    background-image: url("data:image/svg+xml,..."); 
+    opacity: 0.05; /* Apenas perceptible subliminalmente */
+}
+```
+
+### 🖨️ Hack para Medios de Impresión Físicos (Warning)
+
+**Nunca, bajo ninguna circunstancia creativa**, intentes imprimir el grueso Patrón de *"Monitor Fantasma / Moiré de Scanlines CRT"* de tubo sobre un formato de material poroso (Lonas, Stickers o Papel offset regular). 
+Es estúpidamente peligroso en CMYK: Este diminuto entrelazado gráfico (`1px-3px`) jamás se renderiza bien en maquinaria, colapsando inevitablemente el diseño entero en una espesa plasta óptica o un manchón incomprensible y enlodado de tinta para el ojo humano, luciendo visualmente como una falla y mermando calidad corporativa.  
+
+En el inflexible plano físico: Si quieres "ruido" imprime un denso `Polvo/Noise orgánico` o limítate a dominar tus _Solid Colors_.
+
+# INDEX
+
+# SISTEMA DE TEXTURAS
+
+
+  Las texturas de <strong>CODE ME</strong> le dan 'vida' a la maquina. Desde el ruido digital de un monitor antiguo hasta la suavidad física del papel bond.
+
+
+
+  {/* Monitor */}
+  
+    
+      <span className="icon">📺</span>
+      
+    
+    
+      Scanlines y aberracion cromática. La estetica CRT que nos conecta con el origen de la computación.
+      
+    
+  
+
+  {/* Ruido */}
+  
+    
+      <span className="icon">🌫️</span>
+      
+    
+    
+      Imperfeccion digital. Grano fino para romper gradientes y dar densidad a los fondos oscuros.
+      
+    
+  
+
+  {/* Papel */}
+  
+    
+      <span className="icon">📄</span>
+      
+    
+    
+      Textura física. El soporte analogo para materiales impresos, planos técnicos y diagramas.
+      
+    
+  
+
+  {/* Implementaciones */}
+  
+    
+      <span className="icon">⚙️</span>
+      
+    
+    
+      Uso en CSS, modos de fusión en diseño gráfico y protocolos para impresión de alta calidad.
+      
+    
+  
+
+  {/* Prompts */}
+  
+    
+      <span className="icon">🤖</span>
+      
+    
+    
+      Prompts optimizados para generar bases de texturas 8k nativas para la marca.
+
+# MONITOR-FANTASMA
+
+# TEXTURAS: MONITOR FANTASMA
+
+
+
+
+  **Tipo: Digital / Emisiva.** Una simulación pura de hardware retro. Literalmente la estética pesada 
+  de las gloriosas pantallas de tubo de cristal (CRT) de los años 90s fusionada con lúgubres terminales verdes de hackeo.
+
+
+---
+
+### 📺 Tratamiento Visual (`Scanlines()`)
+Visualmente es un bloque de líneas horizontales densas extremadamente finas y fuertemente intercaladas (las llamadas famosamente _Scanline_). Están casadas para siempre con un ligero y difuminado resplandor exterior lumínico (Efecto Bloom de pantalla vieja brillante) y a veces sufre de dolorosa aberración cromática pesada (fuerte desfase óptico forzado de los 3 colores primarios rojo, verde y azul del pixel base) exclusivamente en los bordillos o rincones de la imagen, simulando que el haz de electrones de la pantalla falló terriblemente en golpear el fósforo del cristal físico.
+
+### 🎨 Parámetros de Mezcla Gráfica (`mix-blend-mode`)
+En cualquier software de diseño (Figma / Photoshop) o renderizado CSS forzado, este recurso debe colocarse siempre por encima de tus capas:
+- **Modo de Fusión Opcional 1:** `Overlay` (Para contraste crudo y dramático).
+- **Modo de Fusión Opcional 2:** `Soft Light` (Para ambientes limpios o fotos serias).
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar físicamente esta distorsión?
+- **Sobre Fotografías de Alumnos:** Transformándolas para que parezca que están "Siendo escaneados en 3D" o inmersos profundamente "adentro de la simulación del sistema maestro".
+- **Miniaturas Magnéticas (YouTube):** Un contorno general muy bajo al `10%` atrae mucho la vista (_Clickability_) en video de tutoriales de plataformas de contenido online masivo.
+- Fondos de masterclasses presentadas, **siempre ahogadas en una brutal opacidad general bajísima (`5%`)** para nunca marear inútilmente con las líneas horizontales a quienes ven el proyector en vivo una hora seguida.
+
+# PAPEL-INGENIERIA
+
+# TEXTURAS: PAPEL DE INGENIERÍA
+
+
+
+
+  **Tipo: Física / Absorbente.** No todo el imperio interactivo de **CODE ME** existe en estado gaseoso (La Nube). 
+  El mundo físico exige presencia firme; para ello empleamos texturas base inspiradas cruda y honestamente en aquel viejo _papel bond_ y de _cuadriculado ingeniería_.
+
+
+---
+
+### 📜 Tratamiento Visual (`Blueprint_Matte.css`)
+Abrazamos el error físico análogo rindiéndole tributo: Nuestra textura busca el encubierto ruido propio irregular de la fibra orgánica de un papel industrial muy económico (el que se usaba a granel en los pesados y enredosos manuales técnicos de _MS-DOS_ en los 80s). 
+
+Físicamente esto exige plasmar imperfecciones tales como: 
+- Ligerísimo **sangrado de tinta corrida** (`Ink Bleed`) por absorción excesiva.
+- Puntos diminutos de polvo impreso sobre un fondeado general **nunca blanco de Mac brillante (#FFFFFF)**, sino forzosamente un tono roto y cálido (`ligeramente grisáceo/beige/algodón`).
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+Reglas inflexibles para materializar esta textura en el espacio real:
+- **Exclusivamente Impresos Táctiles:** El diplomado de la academia de tus hijos no es un aburrido cartón oficial, simula visual y texturizadamente una de estas brutales patentes registradas (Fichas, Pases de abordaje o Diplomas Master).
+- **Publicidad Táctica (Leak):** Fondos altamente conceptuales aplicables a *carousels* en ráfagas para Instagram/LinkedIn, donde simulemos aclamadamente que los _secrets_ de la escuela son *"Documentos clasificados técnicos super filtrados al público general"*.
+
+# RUIDO-COMPILACION
+
+# TEXTURAS: RUIDO DE COMPILACIÓN
+
+
+
+
+  **Tipo: Digital / Grasp.** O mejor conocido en el ecosistema técnico como `Digital Noise` puro. Se conceptualiza crudamente como 
+  *el espeso polvo en la máquina*, la misteriosa estática permanente de una señal débil o, en nuestra marca, como la **imperfección controlada**.
+
+
+---
+
+### 🌫️ Tratamiento Visual (`noise()`)
+Se trata de un granulado orgánico hiper fino (usualmente monocromático, tipo `Film Grain`, o en raros casos, sutilmente tricolor). Su propósito existencial principal es servir de textura ambiental para **romper los degradados perfectos** que un software genera, evitando así el feo y nada estético efecto visual del _Banding_ horizontal en los monitores de nuestros clientes, y otorgándote de golpe la densidad visual _Táctil_ de alta gama.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+Prohibiciones de legibilidad y reglas de inyección:
+- **Sombras de Contenedores y CTAs:** Exquisito usarlo inyectándole el `noise` directo a la propia sombra, para darle a las _cards_ tridimensionales y botones puramente flotantes, un peso "táctil" (Roughness palpable).
+- **Fondos Oscuros (`Base-Layers`):** Todos nuestros gigantescos lienzos sólidos color Obsidiana pura, jamás deberían ir 100% lisos en impresos o posters gigantes; la aplicación de un tenue Ruido Base (`Opacity: 3%`) mata esa horrible planura artificial que sueltan las impresoras.
+- **ALERTA CRÍTICA:** Queda penalizado aplicar Ruido de Frecuencia gruesa flotando encima del copy general de los _paragraphs_ (``). No comprometas jamás la sacrosanta legibilidad UX.
+
+# CODIGOS
+
+# FUENTE DE COMANDOS (MONO)
+
+
+
+
+  **El Código Fuente.** Es nuestra esencia _cruda_ destilada en texto. La sintaxis del entorno `IDE`. 
+  Su ritmo espaciado idéntico crea el contraste violento perfecto contra la brutal masa asimétrica negra de Saira.
+
+
+---
+
+### 💻 Familia Elegida: JetBrains Mono
+[JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) es venerada religiosamente mundialmente como la _Fuente Nativa de los Desarrolladores_. Dejamos atrás las odiadas _Courier_ viejas para abrazar esta bestia técnica con hermosas ligaduras de programación incluidas (crea operadores fluidos tipo `=>`, `!=`, `===`).
+
+Al forzar todas sus letras y símbolos a medir idénticamente lo mismo (mono-espaciado), otorga visualmente a la marca la inmediata autoridad "Técnica / Hacker" de un editor avanzado. Representa fielmente a nuestra mascota Bitxo procesando todo crudo.
+
+
+    <FontShowcase 
+        fontFamily="'JetBrains Mono', monospace" 
+        defaultText={"if (idea) { bitxo.build(); }"} 
+        allowedWeights={[400, 700]} 
+    />
+
+
+### 🛠️ Configuración (Specs)
+- **Pesos Aprobados (`font-weight`):** Exclusivos cortes extremos (`Bold (700)` para llamados y Subtítulos visuales, y el esbelto `Regular (400)` para puras líneas de código funcionales en pantalla de IDE).
+- **El Rol:** El Hardware puro. La lógica abstracta del Servidor asomándose.
+- **Espaciado Inteligente:** Al ser Monoespaciada, déjala siempre tranquila (`letter-spacing: normal`). No rompas su matemática intentando unir o separar las letras.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+- **Bloques Visuales Selectivos:** Componentes de Código crudos Snippets simulados o reales. Subtítulos lúdicos (`H2`, `H3`) si queremos darles feeling de "Comandos de Archivos"
+- **Acciones y Navegación:** CTAs o Botoneras duras en un Navbar minimalista que clamen `[ EJECUTAR ]`.
+- Decoración Cruda: Todo el "Ruido Sintáctico Ambiental" de la marca: (>_, //, [ ]).
+
+### 💻 Implementación en Código
+
+```css
+/* Injecting Hacker Monospace System */
+
+pre, code, .terminal-prompt, .cta-button {
+    font-family: 'JetBrains Mono', monospace; 
+    font-weight: 700; /* Bold for UI pop */
+    font-variant-ligatures: contextual; /* Activando ligaduras pro de Devs */
+    background-color: transparent; /* Si se usa sobre Obsidiana */
+    color: var(--cm-cyan-electrico); /* Brillos o Acentos técnicos */
+}
+```
+
+# INDEX
+
+# SISTEMA TIPOGRÁFICO
+
+
+  Nuestra voz se transmite a través de caracteres estructurados. La tipografía en <strong>CODE ME</strong> equilibra la autoridad de los bloques con la amabilidad humana y la precisión del código.
+
+
+
+  {/* Principal */}
+  
+    
+      <span className="icon">🏛️</span>
+      
+    
+    
+      Saira Extra Expanded. Nuestra fuente para titulares de gran impacto, moderna, ancha y solida.
+      
+    
+  
+
+  {/* Secundaria */}
+  
+    
+      <span className="icon">👤</span>
+      
+    
+    
+      Montserrat. Claridad absoluta para bloques extensos de lectura, geometrizada y optimizada para pantallas.
+      
+    
+  
+
+  {/* Codigos */}
+  
+    
+      <span className="icon">💻</span>
+      
+    
+    
+      Fira Code (Mono). El lenguaje de la maquina. Aplicaciones en bloques de código y datos técnicos.
+      
+    
+  
+
+  {/* Lineamientos */}
+  
+    
+      <span className="icon">📐</span>
+      
+    
+    
+      Guía de uso para jerarquías, pesos tipográficos y prohibiciones de estilo (Anti-patterns).
+
+# LINEAMIENTOS
+
+# LINEAMIENTOS Y REGLAS UX 
+
+
+
+
+  **El Sistema de Red de Textos.** La tipografía en Code-Me jamás de los jamases debe verse descuidada. Debe evocar obligatoriamente precisión quirúrgica, claridad lógica extrema y profunda estructura de datos. Buscamos a toda costa equilibrar delicadamente la ruda estética técnica de una terminal vieja con la fluida legibilidad visual de una moderna interfaz de usuario de Sillicon Valley.
+
+
+---
+
+### 📏 Reglas del Sistema (Jerarquía)
+
+Para lograr mantener la robusta consistencia visual de la marca rebotando entre plataformas distintas (Instagram, Diapositivas en vivo e Impresos gigantes), deberán seguirse forzosamente estas estrictas directrices formales:
+
+#### A. Espíritu de Consola (`Mono Character`)
+- **Regla Estricta:** La gran mayoría de los Títulos Técnicos de apoyo (`H2`, `H3`) y elementos duros de UI deben exudar código. El programador (nuestra `JetBrains Mono` nativa de IDE) o similares monolíticas como Fira Code. Esta familia domina brutalmente Menús de Navegación, Footers Crudos y Estadísticas numéricas.
+- **Fallo Tolerado:** Si por razones de compatibilidad del sistema receptor no puede correr la familia pesada o la JetBrains, por regla se fuerza un _fallback_ a cualquier Monoespaciada nativa dura del Sistema Operativo (`Courier New HD`, `Consolas`). Pero nunca a fuentes redondeadas (Tipo _Comic_ o _Papyrus_) a menos que sea un meme a propósito.
+
+#### B. Legibilidad en Pantallas (El Balance `p`)
+- **Regla Estricta:** Para los pesados bloques documentales masivos (Decenas de líneas consecutivas para padres de familia), JAMÁS uses una fuente monoespaciada para el _Body Text_. Agotarás la retina y paciencia del padre usuario. Obligado está usar tu cálida humana **Montserrat** (o equivalente geométrica libre).
+- **Control Fino:** El crucial interlineado (`line-height`) flotando para bloques densos nunca puede declararse inferior mecánicamente a **`1.6em`** para Dark Mode. Esto obedece ciegamente a estrictas reglas de "Leyes UX de Salud Visual en modo noche", evitándonos ese horrendo _apelmazamiento cegador_ de píxeles pesados blancos ardiendo sobre pixeles negros masivos.
+
+#### C. Uppercase & Tracking (Botones de Comandos)
+- **Regla:** Queda prohibido el tratamiento pasivo "Click aquí" en los Botones `[ CTAS / Enlaces directos ]`. Los Botones deben simular en mayúscula sostenida **(UPPERCASE)** ser rudos comandos del DOS para el cursor, abriendo ligeramente en `CSS` el aire dentro de sus letras (`letter-spacing: +0.05em a +0.1em`). 
+
+---
+
+### 🛑 Anti-Patrones de Compilación (Warning_Flags)
+
+1. **NO MEZCLAR `> 2` TIPOGRAFÍAS (`var overload = false`)** 
+   - Está penado por diseño cargar más de DOS familias diferentes de letras sobre el mismo frame/cuadro de vista. Saira masiva y Montserrat limpia para humanos. O JetBrains robótica y Saira si requieres un marco super _Hacker_ técnico. Jamás las 3 al mismo tiempo compitiendo en jerarquía; eso es ruido de aficionado y debilita dolorosamente tu layout gráfico en milisegundos.
+
+2. **CERO USOS DE FUENTES SERIFS (`!important`)**
+   - Literalmente proscrito a fuego el uso visual de tipografías antiguas con _patines o adornos_ clásicos (Las _Times New Roman_, las _Garamond_) incluso si un texto nos lo roga en "citas formales escolares". Rompen estrepitosamente la atmósfera de inmersión Cyberpunk Tecnológica brutal que hemos creado cuadro a cuadro. Aquí nada es época de la imprenta vieja; todo es vectores digitales y Neón.
+
+3. **CERO ITÁLICAS INNECESARIAS (Falsos énfasis)**
+   - La cursiva clásica (`<i>` / `font-style: italic`) ha quedado extinta conceptualmente como medio real para dar protagonismo de lectura general. Aquí los programas no usan cursiva de máquina de escribir inclinada; aquí usamos destellos puros. Si en tu párrafo necesitas realzar fuertemente una idea, no la tuerzas: **la inyectas furiosamente de Semi-Bold (#FF2A6D - Rosa Matrix)** o encierras el texto lúdicamente entre puras marcas de comentarios del IDE estilo `/* Highlight System */` para forzar la sonrisa del que sabe de lenguaje técnico.
+
+# PRINCIPAL
+
+# FUENTE PRINCIPAL (`H1`)
+
+
+
+
+  **La Voz de Mando Sistemático**. La tipografía que recibe el primer impacto visual en la arquitectura de <strong>CODE ME</strong>. 
+  Pura presencia brutalista e industrial que construye bloques inamovibles.
+
+
+---
+
+### 🏗️ Familia Elegida: Saira (Extra Expanded)
+[Saira](https://fonts.google.com/specimen/Saira) es una portentosa tipografía sans-serif de Google Fonts que se caracteriza por su brutal capacidad y solvencia para impactar visualmente el espacio con pura gravedad. 
+Al usar **tácticamente** su versión _“Extra Expanded”_ (Estrecho extra ancho), logramos emular instantáneamente el _Vibe Retro-tech_ de aquellas pesadas matrices de pantallas antiguas. 
+Es una fuente 100% estructural; luce idéntica a los bloques físicos de un rascacielos digital pesado.
+
+
+    <FontShowcase 
+        fontFamily="Saira, sans-serif" 
+        defaultText={"if (idea) { bitxo.build(); }"} 
+        allowedWeights={[800, 900]} 
+    />
+
+
+### 🛠️ Configuración (Specs)
+- **Pesos (`font-weight`):** Exclusivamente los más aplastantes. `Black (900)` o `ExtraBold (800)`.
+- **Ancho (`font-stretch`):** Literalmente imperativo configurarlo a `extra-expanded` (o elegir la familia Saira Extra Condensed en su defecto si tu software no procesa font-stretch variable).
+- **El Rol:** Actúa psicológicamente como _El Muro de Contención_. 
+- **Tracking:** Generalmente un poco más apretado (Tight `letter-spacing: -2%`) para amarrar las letras unas dándose soporte contra otras como un puro bloque en vez de palabras separadas flotando solas.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+- Uso dictatorial y sin excepciones para **Títulos y Encabezados Mayores (`H1`)**.
+- **Regla Estricta del Backend:** El `H1` Saira SIEMPRE se imprime en letras `MAYÚSCULAS` Sostenidas. Nunca capitalizadas ("Abc") o minúsculas. 
+- La fuente principal para cualquier texto pesado sobre playeras o Merchandising.
+- En macro-pantallas corporativas o diapositivas donde necesitemos que una sola frase acapare todo el canvas.
+
+### 💻 Implementación en Código
+
+```css
+/* Injecting Root Typographic Scale */
+
+h1, .saira-heavy-title {
+    font-family: 'Saira', sans-serif; 
+    font-weight: 900;
+    font-stretch: extra-expanded; 
+    text-transform: uppercase;
+    letter-spacing: -0.02em; /* Pegando los caracteres de sistema */
+    line-height: 1.1; /* Rompiendo el interlineado flojo */
+}
+```
+
+# SECUNDARIA
+
+# FUENTE SECUNDARIA (`<P>`)
+
+
+
+
+  **La Voz Humana**. La tipografía nativa con curvas geométricas diseñada para que los humanos reales (padres de familia corporativos y alumnos leyendo código) **nos entiendan ágilmente** sin forzar la vista en pantallas saturadas.
+
+
+---
+
+### 💬 Familia Elegida: Montserrat
+[Montserrat](https://fonts.google.com/specimen/Montserrat) es nuestra navaja suiza de la legibilidad. Es una fuente sin patines (_sans-serif_) tremendamente moderna, pulcramente geométrica pero amable a la vista. 
+Su rol supremo en el canvas gráfico es **traducir y rebajar** la arrolladora intensidad visual bruta de nuestras otras dos tipografías (La brutalista _Saira_ y la robótica _JetBrains_), permitiendo a los usuarios consumir párrafos largos, explicaciones complejas y legales corporativos sin agotarse en fracciones de segundo.
+
+
+    <FontShowcase 
+        fontFamily="'Montserrat', sans-serif" 
+        defaultText={"if (idea) { return bitxo.build(); }"} 
+        allowedWeights={[400, 600, 700]} 
+    />
+
+
+### 🛠️ Configuración (Specs)
+- **Pesos Aprobados (`font-weight`):** `SemiBold (600)` para hacer resaltar los links, negrillas de énfasis (`<b>`) y subtítulos ligeros. O el balanceado `Regular (400)` estricto para cuerpos de texto.
+- **El Rol:** El balance. La claridad mental (UX) y la lectura sostenida.
+- **Tracking:** Relajado. Nunca debe ir apretada. Deja que las letras respiren a `0em` o `+0.01em` para maximizar la lectura horizontal en resoluciones móviles.
+
+### 📍 Puntos de Montaje Aprobados (Deploy)
+¿Dónde implementar este recurso textual?
+- Cuerpos de texto masivos (Body text, Documentación general y `Text-areas`).
+- Textos y _Footers_ Legales.
+- Documentos corporativos y PDF de alianzas estratégicas dirigidos a socios (Business to Business).
+
+### 💻 Implementación en Código
+
+```css
+/* Injecting Soft Typographic Scale */
+
+p, span, .body-text {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 400; /* Regular base */
+    line-height: 1.6; /* Aire vital entre lineas */
+    color: var(--cm-blanco-consola); /* Contraste Dark Mode */
+}
+
+b, strong {
+    font-weight: 600; /* Pop-out SemiBold */
+}
+```
