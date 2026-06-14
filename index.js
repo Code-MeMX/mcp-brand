@@ -1,5 +1,8 @@
 import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
+import { SSEServerTransport } from "@modelcontextprotocol/sdk/server/sse.js";
+import express from "express";
+import cors from "cors";
 import {
   CallToolRequestSchema,
   ListToolsRequestSchema,
@@ -255,13 +258,42 @@ ${contexts.mascota}
 });
 
 // Run the server
-async function main() {
+async function runStdio() {
   const transport = new StdioServerTransport();
   await server.connect(transport);
   console.error("Code-Me Brand MCP Server running on stdio");
 }
 
-main().catch((error) => {
-  console.error("Server error:", error);
-  process.exit(1);
-});
+async function runSSE(port) {
+  const app = express();
+  app.use(cors());
+
+  let transport;
+
+  app.get("/sse", async (req, res) => {
+    transport = new SSEServerTransport("/message", res);
+    await server.connect(transport);
+    console.error("Client connected to SSE");
+  });
+
+  app.post("/message", async (req, res) => {
+    if (transport) {
+      await transport.handlePostMessage(req, res);
+    } else {
+      res.status(503).send("No active SSE connection");
+    }
+  });
+
+  app.listen(port, () => {
+    console.error(`Code-Me Brand MCP Server running on SSE at http://localhost:${port}`);
+    console.error(`Client SSE Endpoint: http://localhost:${port}/sse`);
+    console.error(`Client POST Endpoint: http://localhost:${port}/message`);
+  });
+}
+
+const PORT = process.env.PORT;
+if (PORT) {
+  runSSE(PORT).catch(console.error);
+} else {
+  runStdio().catch(console.error);
+}

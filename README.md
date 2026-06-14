@@ -6,12 +6,31 @@ Al estar empaquetado con los archivos de contexto en formato `.mdx` directamente
 
 ## 🚀 Instalación y Uso
 
-1. Instala las dependencias:
-   ```bash
-   npm install
-   ```
+### 1. Despliegue en la Nube (Online SSE)
+El servidor soporta de forma nativa SSE (Server-Sent Events) sobre HTTP, listo para desplegarse en plataformas como Render, Railway o Heroku.
 
-2. Configura el servidor en tu cliente MCP (ej. `claude_desktop_config.json`):
+Si defines la variable de entorno `PORT`, el servidor levantará una API de Express en automático:
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor online
+PORT=3000 npm start
+```
+- Endpoint de Conexión SSE: `http://<tu-dominio>/sse`
+- Endpoint de Mensajes: `http://<tu-dominio>/message`
+
+### 2. Uso Local (Cursor / Claude Desktop)
+Por defecto, si no se detecta la variable `PORT`, el servidor se ejecuta en modo local usando **STDIO** (Standard Input/Output).
+
+```bash
+git clone https://github.com/Code-MeMX/mcp-brand.git
+cd mcp-brand
+npm install
+```
+
+#### Para Cursor:
+Abre la configuración del servidor en tu cliente MCP (ej. `claude_desktop_config.json`):
    ```json
    {
      "mcpServers": {
