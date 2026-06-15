@@ -270,10 +270,10 @@ async function runSSE(port) {
 
   let transport;
 
-  app.get("/sse", async (req, res) => {
+  app.get("/mcp", async (req, res) => {
     transport = new SSEServerTransport("/message", res);
     await server.connect(transport);
-    console.error("Client connected to SSE");
+    console.error("Client connected to SSE (MCP endpoint)");
   });
 
   app.post("/message", async (req, res) => {
@@ -286,7 +286,7 @@ async function runSSE(port) {
 
   app.listen(port, () => {
     console.error(`Code-Me Brand MCP Server running on SSE at http://localhost:${port}`);
-    console.error(`Client SSE Endpoint: http://localhost:${port}/sse`);
+    console.error(`Client MCP Endpoint: http://localhost:${port}/mcp`);
     console.error(`Client POST Endpoint: http://localhost:${port}/message`);
   });
 }

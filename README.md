@@ -17,7 +17,7 @@ npm install
 # Iniciar servidor online
 PORT=3000 npm start
 ```
-- Endpoint de Conexión SSE: `http://<tu-dominio>/sse`
+- Endpoint de Conexión SSE: `http://<tu-dominio>/mcp`
 - Endpoint de Mensajes: `http://<tu-dominio>/message`
 
 ### 2. Uso Local (Cursor / Claude Desktop)
