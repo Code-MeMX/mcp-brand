@@ -287,12 +287,17 @@ async function runSSE(port) {
       --cm-verde-terminal: #05FF00;
       --cm-blanco-consola: #F8FAFC;
     }
+    html {
+      background-color: var(--cm-obsidiana);
+    }
     body {
       background-color: var(--cm-obsidiana);
       color: var(--cm-blanco-consola);
       font-family: 'JetBrains Mono', 'Courier New', Courier, monospace;
       margin: 0;
       padding: 3rem;
+      min-height: 100vh;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
